@@ -1,11 +1,11 @@
-Ôªø<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="stylesheet" href="css/style.css" type="text/css"	media="screen" />
 <link rel="stylesheet" href="css/box.css" type="text/css"	media="screen" />
@@ -85,12 +85,12 @@
 			</div>
 			<%}%>
 
-		<h1>SIHISB - S√ÉO BERNARDO DO CAMPO</h1>
+		<h1>SIHISB - S√O BERNARDO DO CAMPO</h1>
 
 		<div id="wrapper">
 
 		
-	<h1>Ocorreu um erro, entre no sistema novamente, caso o erro persista entre em contato com o Suporte.</h1>
+	<h1>Ocorreu um erro, entre no sistema novamente. Caso o erro persista entre em contato com o Suporte.</h1>
 		
 
 
@@ -99,7 +99,7 @@
 		</div>
 
 		<div id="rodape">
-		Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO
+		Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
