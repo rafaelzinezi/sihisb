@@ -1,4 +1,4 @@
-Ôªø<%@page import="oracle.jdbc.util.Login"%>
+<%@page import="oracle.jdbc.util.Login"%>
 <%@ page language="java" contentType="text/html" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@page import="br.gov.sp.saobernardo.sehab.bean2.CadastroProjetoBean" %>
@@ -26,7 +26,7 @@ if(usuario == null){
 
 <head>
 
-<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
 <script>
 var optionCombo = "";
 <%if(request.getAttribute("allEscolaridade") != null){
@@ -63,8 +63,8 @@ var optionCombo3 = "";
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -115,11 +115,11 @@ var optionCombo3 = "";
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol√° <%=usuario.getLogin()%></div>
+		<div style="position: absolute;right:200px;top:140px">Ol· <%=usuario.getLogin()%></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU√ÅRIOS</a>
+						<li class="administradorOnly"><a href="#">USU¡RIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -182,7 +182,7 @@ var optionCombo3 = "";
 					
 				</li>
 				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS√ÉO<br/>USO</a>
+				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS√O<br/>USO</a>
 					
 				</li>
 				<li>
@@ -215,10 +215,10 @@ var optionCombo3 = "";
 		
 
 	<div id="content">
-		<h1>SIHISB - Cadastro de Fam√≠lia</h1>
+		<h1>SIHISB - Cadastro de FamÌlia</h1>
 		<div id="erros" style="display: none;">
 			Favor, verifique os campos destacados em <b>vermelho</b> no
-			formul√°rio.
+			formul·rio.
 		</div>
 		<div id="wrapper">
 			<div id="steps">
@@ -231,7 +231,7 @@ var optionCombo3 = "";
 								
 					<fieldset class="step">
 					
-					<legend>Cadastro de Mun√≠cipe</legend>
+					<legend>Cadastro de MunÌcipe</legend>
 				
 					<div class="colunas">
 					
@@ -243,7 +243,7 @@ var optionCombo3 = "";
 							<input type="text" id="n_selo" name="n_selo" AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getSelo()%>" />
 						</p>
 						<p>
-							<label for="n_cadastro">N√∫mero do Cadastro</label> 
+							<label for="n_cadastro">N˙mero do Cadastro</label> 
 							<input type="text" id="n_cadastro" name="n_cadastro" AUTOCOMPLETE=OFF readonly=readonly value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNumeroCadastro()%>"/>
 							<script type="text/javascript">
 									(function($) {
@@ -255,7 +255,7 @@ var optionCombo3 = "";
 											}
 											else
 										{
-												alert('N√£o deixe de selecionar o Assentamento e Selo');
+												alert('N„o deixe de selecionar o Assentamento e Selo');
 												$('#assentamento').focus();
 											}
 										});
@@ -277,7 +277,7 @@ var optionCombo3 = "";
 							</p>
 							
 							<p>
-								<label for="nome_1_responsavel">Nome do 1¬∫ Respons√°vel</label> <input
+								<label for="nome_1_responsavel">Nome do 1∫ Respons·vel</label> <input
 									type="text" id="nome_1_responsavel" name="nome_1_responsavel"
 									AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomePrimResponsavel()%>"/>
 							</p>
@@ -304,23 +304,23 @@ var optionCombo3 = "";
 								  </select>
 							</p>
 							<p>
-								<label for="bolsa_familia">Bolsa Fam√≠lia</label> 
+								<label for="bolsa_familia">Bolsa FamÌlia</label> 
 								<select id="bolsa_familia" name="bolsa_familia" class="smallLabel">
 										<option value="-1">Selecione</option>
 										<option value="1" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 2 ? "SELECTED" : ""%> >N√£o</option>
+										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 2 ? "SELECTED" : ""%> >N„o</option>
 									</select>
 							
 								<label for="recebe" class="smallLabel">Recebe</label> <select id="recebe"
 									name="recebe" class="smallLabel">
 									<option value="-1">Selecione</option>
 										<option value="1" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 2 ? "SELECTED" : ""%> >N√£o</option>
+										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 2 ? "SELECTED" : ""%> >N„o</option>
 									</select>
 							</p>
 							
 							<p>
-								<label for="n_inscricao_social">N√∫mero da Inscri√ß√£o
+								<label for="n_inscricao_social">N˙mero da InscriÁ„o
 									Social</label> <input type="text" id="n_inscricao_social"
 									name="n_inscricao_social" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getnIs()%>" />
 							</p>
@@ -333,7 +333,7 @@ var optionCombo3 = "";
 						</div>
 						<div class="colunas">
 						<p>
-								<label for="nome_2_responsavel">Nome do 2¬∫ Respons√°vel</label> <input
+								<label for="nome_2_responsavel">Nome do 2∫ Respons·vel</label> <input
 									type="text" id="nome_2_responsavel" name="nome_2_responsavel"
 									AUTOCOMPLETE=OFF  value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeSegResponsavel()%>"/>
 							</p>
@@ -362,29 +362,29 @@ var optionCombo3 = "";
 						
 							
 							<p>
-								<label for="endereco">Endere√ßo</label> <input type="text"
+								<label for="endereco">EndereÁo</label> <input type="text"
 									id="endereco" name="endereco" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getEndereco()%>" />
 							</p>
 							<p>
-								<label for="tempo_imovel">Tempo de Moradia no Im√≥vel</label> <input
+								<label for="tempo_imovel">Tempo de Moradia no ImÛvel</label> <input
 									type="text" id="tempo_imovel" style="width: 250px"
 									name="tempo_imovel" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMoradia()%>" /> Anos
 							</p>
 							<p>
-								<label for="tempo_area">Tempo de Moradia na √Årea</label> <input
+								<label for="tempo_area">Tempo de Moradia na ¡rea</label> <input
 									type="text" id="tempo_area" style="width: 250px"
 									name="tempo_area" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoArea()%>" /> Anos
 							</p>
 							<p>
-								<label for="tempo_municipio">Tempo de Moradia na Munic√≠pio</label>
+								<label for="tempo_municipio">Tempo de Moradia na MunicÌpio</label>
 								 <input type="text" id="tempo_municipio" style="width: 250px" name="tempo_municipio" AUTOCOMPLETE=OFF  value = "<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMunicipio()%>"/>Anos
 							</p>
 							</div>
-							<legend>Hist√≥rico</legend>
+							<legend>HistÛrico</legend>
 
 						<p class="width100">
 
-								<label for="observacao" class="bigLabel">Descri√ß√£o</label> 
+								<label for="observacao" class="bigLabel">DescriÁ„o</label> 
 								<textarea id="observacao" name="observacao"	class="specialTextArea"><%=((CadastroProjetoBean)request.getAttribute("projeto")).getObservacoes()%></textarea>
 								<script type="text/javascript">
 									(function($) {
@@ -403,7 +403,7 @@ var optionCombo3 = "";
 					</fieldset>
 					
 					<fieldset class="step">
-						<legend>Composi√ß√£o Familiar</legend>
+						<legend>ComposiÁ„o Familiar</legend>
 						<p class="width100">
 							<button style="font-size: 14px; padding: 8px" onclick="criaComposicaoFamiliar()" type="Button" id="addIntFam" />
 							Adicionar Integrante Familiar
@@ -414,19 +414,19 @@ var optionCombo3 = "";
 							<table id="tabelaIntegrantes">
 								<tr>
 									<th></th>
-									<th><img src="./images/arrow_more.png" /> N¬∫ Cadastro</th>
+									<th><img src="./images/arrow_more.png" /> N∫ Cadastro</th>
 									<th><img src="./images/arrow_more.png" /> Nome</th>
 									<th><img src="./images/arrow_more.png" /> Parentesco</th>
 									<th><img src="./images/arrow_more.png" /> CPF</th>
 									<th><img src="./images/arrow_more.png" /> RG</th>
 									<th><img src="./images/arrow_more.png" /> Renda(R$)</th>
-									<th><img src="./images/arrow_more.png" /> Fam√≠lia</th>
+									<th><img src="./images/arrow_more.png" /> FamÌlia</th>
 									<th><img src="./images/arrow_more.png" /> Sexo</th>
 									<th><img src="./images/arrow_more.png" /> Idade</th>
 									<th><img src="./images/arrow_more.png" /> Cor</th>
 									<th><img src="./images/arrow_more.png" /> Escolaridade</th>
-									<th><img src="./images/arrow_more.png" /> Ocupa√ß√£o</th>
-									<th><img src="./images/arrow_more.png" /> Defici√™ncia</th>
+									<th><img src="./images/arrow_more.png" /> OcupaÁ„o</th>
+									<th><img src="./images/arrow_more.png" /> DeficiÍncia</th>
 								</tr>
 							<% ArrayList<ComposicaoFamiliarBean> compfam = (ArrayList)request.getAttribute("compfam");
 									for(int i=0; i < compfam.size(); i++){
@@ -495,7 +495,7 @@ var optionCombo3 = "";
 							<td><select id="dom_deficiencia" '+imprimiControle+'  name="dom_deficiencia[<%=i+1 %>]">
 							<option value="-1">Selecione</option>
 										<option value="1" <%=  compfam.get(i).getDeficiencia() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%=  compfam.get(i).getDeficiencia() == 2 ? "SELECTED" : ""%> >N√£o</option>
+										<option value="2" <%=  compfam.get(i).getDeficiencia() == 2 ? "SELECTED" : ""%> >N„o</option>
 									</select>
 							
 							</td>
@@ -520,7 +520,7 @@ var optionCombo3 = "";
 						<table border="0" style="width: 200px">
 							<tr>
 								<td><button id="registerButton" type="submit" onclick="return verificaSubmit()">Sim</button></td>
-								<td><button id="registerButton" type="Button" onClick="location.href='paginaInicial'">N√£o</button></td>
+								<td><button id="registerButton" type="Button" onClick="location.href='paginaInicial'">N„o</button></td>
 							</tr>
 						</table>
 						</center>
@@ -534,7 +534,7 @@ var optionCombo3 = "";
 				<ul>
 					<li class="selected"><a href="#"
 						onclick="location.href='#topo';">Dados Gerais</a></li>
-					<li><a href="#" onclick="location.href='#topo';">Composi√ß√£o
+					<li><a href="#" onclick="location.href='#topo';">ComposiÁ„o
 							Familiar</a></li>
 					<li><a href="#topo" onclick="location.href='#topo'">Confirme</a>
 					</li>
@@ -542,7 +542,7 @@ var optionCombo3 = "";
 			</div>
 		</div>
 		<div id="rodape">
-			Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO <br />
+			Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO <br />
 			Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000 <br /> PABX 4367 - 6400 
 			</div>
 		</div>
@@ -618,6 +618,7 @@ var optionCombo3 = "";
 		$(".E4").show();
 		
 	}
+	
 	</script>
 	</body>
 </html>

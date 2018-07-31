@@ -1,11 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ï»¿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de São Bernardo do Campo - Sihisb Homologação</title>
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+<title>HOMOLOGAÃ‡ÃƒO - Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no MunicÃ­pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 
@@ -54,32 +54,32 @@
 					</div>
 
 				</li>
-				<li>
+<li>
 
-					<a href="faq.jsp">DÚVIDAS FREQUENTES</a>
+					<a href="faq.jsp">DÃšVIDAS FREQUENTES</a>
 
 				</li>
 
 				
 			
-				<li class="dropMenuDown"><a href="#"><img src="images/intranet.png" class="align-left"/></a>
-						<ul class="homeLogin">
-							<li>
-								<div>
-								<form method="post" action="validaLogin.do">
-									<label>Matricula:</label>
-									<input type="text" class="cxInput" name="nome"/>
-									
-									<label>Senha:</label>
-									<input type="password" class="cxInput" name="senha"/>
-									<br/><br/>
-									<input type="submit" value="ACESSAR"  class="btOk"/>
-									<a href="recuperarSenha.jsp" class="linkComun">Esqueceu a senha?</a>
-								</form>
-								</div>
-							</li>
-						</ul>
-					</li>
+			<li class="dropMenuDown"><a href="#"><img src="images/intranet.png" class="align-left"/></a>
+					<ul class="homeLogin">
+						<li>
+							<div>
+							<form method="post" action="validaLogin.do">
+								<label>Matricula:</label>
+								<input type="text" class="cxInput" name="nome"/>
+								
+								<label>Senha:</label>
+								<input type="password" class="cxInput" name="senha"/>
+								<br/><br/>
+								<input type="submit" value="ACESSAR"  class="btOk"/>
+								<a href="recuperarSenha.jsp" class="linkComun">Esqueceu a senha?</a>
+							</form>
+							</div>
+						</li>
+					</ul>
+				</li>
 				
 
 			</ul>
@@ -97,10 +97,13 @@
 
 		
 
-		<h1>SIHISB HOMOLOGAÇÃO - SÃO BERNARDO DO CAMPO</h1>
+		<h1>SIHISB - SÃƒO BERNARDO DO CAMPO</h1>
+
+		<div id="wrapper">
+		</div>
 
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+			Copyright Â© 2012 - SECRETARIA DE HABITAÃ‡ÃƒO DE SÃƒO BERNARDO DO CAMPO - homologaÃ§Ã£o
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
@@ -113,7 +116,7 @@
 <script type="text/javascript">
 $(document).ready(function() {      
 	if(navigator.appName.indexOf('Internet Explorer')>0){
-		alert('AVISO:\nEsse site é melhor visualizado em Google Chrome ou Mozilla Firefox.');
+		alert('AVISO:\nEsse site Ã© melhor visualizado em Google Chrome ou Mozilla Firefox.');
 	}
 });
 </script>
