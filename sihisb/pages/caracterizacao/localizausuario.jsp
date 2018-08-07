@@ -96,13 +96,6 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
-					
-				</li>
 				<li>
 
 					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
@@ -132,7 +125,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	</div>
 		
 	<div id="content">
-		<h1>SIHISB - Consulta de Assentamentos</h1>
+		<h1>SIHISB - Usuários</h1>
 		
 		<div id="erros" style="display: none;">
 			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
