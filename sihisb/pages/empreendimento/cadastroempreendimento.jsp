@@ -180,7 +180,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 		
 	<div id="content">
-		<h1>HABISP - Cadastro de Empreendimentos</h1>
+		<h1>SIHISB - Cadastro de Empreendimentos</h1>
 		
 		<div id="erros" style="display: none;">
 			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.

@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>HOMOLOGAÇÃO - Prefeitura de São Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no Município" />
 <meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
@@ -100,10 +100,12 @@
 		<h1>SIHISB - SÃO BERNARDO DO CAMPO</h1>
 
 		<div id="wrapper">
+			
+
 		</div>
 
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO - homologação
+			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
