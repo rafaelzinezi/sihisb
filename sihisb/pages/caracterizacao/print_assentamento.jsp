@@ -163,7 +163,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 				</td>
 				
 				<td><%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == -1 ? "" : "" %>
-				<%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == 1 ? "sim" : "n?" %>
+				<%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == 1 ? "sim" : "não?" %>
 				
 				
 				</td>
