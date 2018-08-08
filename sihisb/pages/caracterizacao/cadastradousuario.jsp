@@ -22,12 +22,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -60,18 +60,18 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-			<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
+			<div style="position: absolute;right:200px;top:140px">OlÃ¡ <%=usuario.getLogin() %></div>
 				<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
+						<li class="administradorOnly"><a href="#">USUÃRIOS</a>
 					<ul>
 						<li>
 							<div>
 								<a href="localizaCadastroUsuario">Consultar/Editar</a>
 								<a href="cadastroLogin">Cadastrar</a>
 							</div>
-							
+							</form>
 							</li>
 						</ul>
 					</li>
@@ -123,7 +123,13 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 					</ul>
 
 				</li> 
-
+					<li><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
+					
+				</li>
+			
+				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃƒO<br/>USO</a>
+					
+				</li>
 				<li>
 
 					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
@@ -155,7 +161,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		
 		
 		<div id="content">
-			<h1>SIHISB - Cadastro de Usuários</h1>
+			<h1>SIHISB - Cadastro de Assentamentos</h1>
 			
 			<%if(request.getAttribute("mensagem") != null){%>
 			<div id="secess">
@@ -179,7 +185,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		{
 		
 		$(".administradorOnly").hide();
-		};
+		}
 
 	</script>
 	
