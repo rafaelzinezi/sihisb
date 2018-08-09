@@ -1,6 +1,6 @@
 ﻿<%@ page language="java" contentType="text/html" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<!--  teste-->
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean"%>
 <%@page import="br.gov.sp.saobernardo.sehab.bean.RegiaoOperacaoBean" %>
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean" %>
