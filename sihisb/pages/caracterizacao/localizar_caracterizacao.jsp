@@ -1,4 +1,4 @@
-Ôªø<%@ page language="java" contentType="text/html"%>
+<%@ page language="java" contentType="text/html"%>
     
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -12,10 +12,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -35,18 +35,18 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol√° <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Ol· <%=usuario.getLogin() %></div>
 	<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU√ÅRIOS</a>
+						<li class="administradorOnly"><a href="#">USU¡RIOS</a>
 					<ul>
 						<li>
 							<div>
 								<a href="localizaCadastroUsuario">Consultar/Editar</a>
 								<a href="cadastroLogin">Cadastrar</a>
 							</div>
-							</form>
+							
 							</li>
 						</ul>
 					</li>
@@ -98,16 +98,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li class="BCDE BCD CDE CD DE D3"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-			
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS√ÉO<br/>USO</a>
-					
-				</li>
+
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 
@@ -137,7 +131,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<h1>SIHISB - Consulta de Assentamentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul√°rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formul·rio.
 		</div>
 		
 			<%if(request.getAttribute("mensagem") != null){%>
@@ -158,7 +152,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				</p>
 				
 				<p class="width100">
-					<label for="n_selo" >N¬∫ Funep</label> 
+					<label for="n_selo" >N∫ Funep</label> 
 					<input id="codigo_funep" name="codigo_funep"  onkeydown="filtraAssent(this)" value="<%=request.getAttribute("codigo_funep") %>"/>
 				</p>
 				
@@ -172,9 +166,9 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				<legend>Resultado</legend>
 				<table border="0">
 					<tr>
-						<th><img src="images/arrow_more.png" /> <b>N¬∫ Funep</b></th>
+						<th><img src="images/arrow_more.png" /> <b>N∫ Funep</b></th>
 						<th><img src="images/arrow_more.png" /> <b>Nome</b></th>
-						<th width="60"><img src="images/arrow_more.png" /> <b>A√ß√£o</b></th>
+						<th width="60"><img src="images/arrow_more.png" /> <b>AÁ„o</b></th>
 					</tr>
 					<%
 						if(request.getAttribute("caracterizacaoList") != null){
@@ -208,7 +202,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 		};
 </script>
-							<a href="javascript:impressaoCaracterizacao('<%=caracterizacao.get(i).getCodFunep() %>')"><img src="images/printer-icon2.gif" title="Abrir Impress√£o/Relat√≥rio"/></a>
+							<a href="javascript:impressaoCaracterizacao('<%=caracterizacao.get(i).getCodFunep() %>')"><img src="images/printer-icon2.gif" title="Abrir Impress„o/RelatÛrio"/></a>
 							<a class="usuariovisual" href="javascript:editarCaracterizacao('<%=caracterizacao.get(i).getCodFunep() %>')"><img src="images/edit-icon.gif" title="Editar Cadastro"/></a>
 						</td>
 					</tr>
@@ -228,7 +222,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			
 		</div></div>
 		<div id="rodape">
-			Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO
+			Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

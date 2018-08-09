@@ -45,7 +45,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	<div id="top">
 		<table width="100%">
 			<tr>
-				<td width="150"><img src="images/logo_2012.jpg" title="S?Bernardo do Campo"/></td>
+				<td width="150"><img src="images/logo_2012.jpg" title="São Bernardo do Campo"/></td>
 				<td><h1><%=((ImpressaoBean)request.getAttribute("impressao")).getNomeArea() %></h1></td>
 				<td width="150"><img src="images/logo_sihisb.jpg" title="SIHISB" width="150" height="50"/></td>
 			</tr>
@@ -53,7 +53,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	</div>
 	
 	<div id="conteudo">
-	<td>Ultima altera? feita por:<%=((ImpressaoBean)request.getAttribute("impressao")).getUsuario()%> em <%=((ImpressaoBean)request.getAttribute("impressao")).getData()%> </td>
+	<td>Última alteração feita por:<%=((ImpressaoBean)request.getAttribute("impressao")).getUsuario()%> em <%=((ImpressaoBean)request.getAttribute("impressao")).getData()%> </td>
 		<table>
 			<tr class="topic">
 				<td colspan="4">
@@ -62,7 +62,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			</tr>
 			
 			<tr>
-				<td><label>Galeria<label></td>
+				<td><label>Galeria</label></td>
 				<td colspan="3">
 				<% if(request.getAttribute("consultaImagem") != null)
 				{		
@@ -167,7 +167,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 				
 				
 				</td>
-				<td><label for="area_manancial">Area Manancial</label>
+				<td><label for="area_manancial">Área Manancial</label>
 				</td>
 				<td colspan=3>${impressao.codManancial}</td>
 			</tr>
@@ -231,7 +231,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 				
 
-				<td><label for="hierarq_prog">Hierarquização no Programa<label></td>
+				<td><label for="hierarq_prog">Hierarquização no Programa</label></td>
 
 				<td>${impressao.hierarquizacao}</td>
 
@@ -393,8 +393,8 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			</table>
 	</div>
 	<div id="printar" onclick="imprimir()">
-		<br /> <a href="javascript: void();" /> <img
-			src="images/printer-icon.gif" title="Imprimir" align="left" />Clique
+		<br /> <a href="javascript: void();" > 
+			<img src="images/printer-icon.gif" title="Imprimir" align="left" />Clique
 		aqui para imprimir </a>
 	</div>
 </body>

@@ -1,4 +1,4 @@
-ï»¿<%@ page language="java" contentType="text/html"%>
+<%@ page language="java" contentType="text/html"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean"%>
@@ -22,12 +22,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -63,18 +63,18 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-			<div style="position: absolute;right:200px;top:140px">OlÃ¡ <%=usuario.getLogin() %></div>
+			<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÃRIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
 								<a href="localizaCadastroUsuario">Consultar/Editar</a>
 								<a href="cadastroLogin">Cadastrar</a>
 							</div>
-							</form>
+							
 							</li>
 						</ul>
 					</li>
@@ -111,7 +111,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 					<li class="D"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a></li>
 					
 				
-				<li class="E"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃƒO<br/>USO</a>
+				<li class="E"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
 					
 				</li>
 				
@@ -137,7 +137,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 				
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 
@@ -164,31 +164,30 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	</div>
 		
 	
-		<div id="content">
-			<h1>SIHISB - Cadastro de Assentamentos</h1>
-			
-			<%if(request.getAttribute("mensagem") != null){%>
-			<div id="secess">
-				<%=request.getAttribute("mensagem") %>
-			</div>
-			<%}%>
-			<div id="wrapper">
-			<div id="wrapper">
-				<div id="steps">
-				<form method="post" action="localizarCaracterizacao" >
-				<fieldset class="step">
-				<center>
-				<table border="0" style="width: 200px">
-				<td><button type="submit" id="registerButton" id="administradorOnlyProj2">Consultar CaracterizaÃ§Ã£o</button></td>
-				</form>
-							
-				</table>
-				</center>
-				</fieldset>
-			
+	<div id="content">
+		<h1>SIHISB - Cadastro de Assentamentos</h1>
 		
+		<%if(request.getAttribute("mensagem") != null){%>
+		<div id="secess">
+			<%=request.getAttribute("mensagem") %>
+		</div>
+		<%}%>
+		<div id="wrapper">
+			<div id="steps">
+				<form method="post" action="localizarCaracterizacao" >
+					<fieldset class="step">
+						<center>
+							<table border="0" style="width: 200px">
+								<td>
+									<button type="submit" id="registerButton" id="administradorOnlyProj2">Consultar Caracterização</button>
+								</td>
+							</table>
+						</center>
+					</fieldset>
+				</form>
 			</div>
-			</div>
+		</div>
+	</div>	
 	<input type="hidden" id="grupo" value="<%=usuario.getGrupo() %>"/>
 	<input type="hidden" id="modulo1" value="<%=usuario.getModulo1()%>"/>
 	<script>
