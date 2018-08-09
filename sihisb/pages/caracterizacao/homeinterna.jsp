@@ -1,12 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+Ôªø<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.loginBean.LoginBean"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="stylesheet" href="css/style.css" type="text/css"	media="screen" />
@@ -37,12 +37,12 @@ if(usuario == null){
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
 
-		<div style="position: absolute;right:200px;top:140px">Ol· <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Ol√° <%=usuario.getLogin() %></div>
 
 	<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU¡RIOS</a>
+						<li class="administradorOnly"><a href="#">USU√ÅRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -136,7 +136,7 @@ if(usuario == null){
 
 		<div id="content">
 
-		<h1>SIHISB - S√O BERNARDO DO CAMPO</h1>
+		<h1>SIHISB - S√ÉO BERNARDO DO CAMPO</h1>
 
 		<div id="wrapper">
 
@@ -146,7 +146,7 @@ if(usuario == null){
 
 
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO
+			Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

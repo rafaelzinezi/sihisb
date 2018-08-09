@@ -1,14 +1,14 @@
-<%@ page language="java" contentType="text/html"%>
+ï»¿<%@ page language="java" contentType="text/html"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.bean.CaracterizacaoBean" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="stylesheet" href="/css/style.css" type="text/css"	media="screen" />
 
@@ -63,7 +63,7 @@
 		<h1>SIHISB - Consulta de Assentamentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulÃ¡rio.
 		</div>
 		
 		<div id="wrapper">
@@ -72,7 +72,7 @@
 			<fieldset class="step">
 				<table border="0">
 					<tr>
-						<th><img src="images/arrow_more.png" /> <b>Nº Funep</b></th>
+						<th><img src="images/arrow_more.png" /> <b>NÂº Funep</b></th>
 						<th><img src="images/arrow_more.png" /> <b>Nome</b></th>
 					</tr>
 					<tr>
@@ -94,9 +94,9 @@
 		</div></div>
 		
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+			Copyright Â© 2012 - SECRETARIA DE HABITAÃ‡ÃƒO DE SÃƒO BERNARDO DO CAMPO
 			<br/>
-			Praça Samuel Sabatini, 50 - CEP 09750-001
+			PraÃ§a Samuel Sabatini, 50 - CEP 09750-001
 			<br/>
 			PABX 4348-1000 - 1043
 		</div>

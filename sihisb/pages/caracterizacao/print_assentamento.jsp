@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html"; import="java.util.*"%>
+Ôªø<%@ page language="java" contentType="text/html"; import="java.util.*"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -23,9 +23,9 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura Minicipal de S„o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura Minicipal de S√£o Bernardo do Campo - Sihisb</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
 <meta name="keywords" content="SEHAB SIHISP MAPA HABITA?O MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
@@ -45,7 +45,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	<div id="top">
 		<table width="100%">
 			<tr>
-				<td width="150"><img src="images/logo_2012.jpg" title="S„o Bernardo do Campo"/></td>
+				<td width="150"><img src="images/logo_2012.jpg" title="S√£o Bernardo do Campo"/></td>
 				<td><h1><%=((ImpressaoBean)request.getAttribute("impressao")).getNomeArea() %></h1></td>
 				<td width="150"><img src="images/logo_sihisb.jpg" title="SIHISB" width="150" height="50"/></td>
 			</tr>
@@ -53,7 +53,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	</div>
 	
 	<div id="conteudo">
-	<td>⁄ltima alteraÁ„o feita por:<%=((ImpressaoBean)request.getAttribute("impressao")).getUsuario()%> em <%=((ImpressaoBean)request.getAttribute("impressao")).getData()%> </td>
+	<td>√öltima altera√ß√£o feita por:<%=((ImpressaoBean)request.getAttribute("impressao")).getUsuario()%> em <%=((ImpressaoBean)request.getAttribute("impressao")).getData()%> </td>
 		<table>
 			<tr class="topic">
 				<td colspan="4">
@@ -86,11 +86,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			
 			<tr>
 
-				<td width="150"><label for="codigo_xxx">CÛdigo HabitaÁ„o</label>
+				<td width="150"><label for="codigo_xxx">C√≥digo Habita√ß√£o</label>
 				</td>
 				<td><%=((ImpressaoBean)request.getAttribute("impressao")).getCodFunep() %></td>
 
-				<td width="150"><label for="codigo_funep">N˙mero Funep</label>
+				<td width="150"><label for="codigo_funep">N√∫mero Funep</label>
 				</td>
 				<td><%=((ImpressaoBean)request.getAttribute("impressao")).getCodFunep() %></td>
 
@@ -100,7 +100,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="nome_area">Nome da ·rea</label>
+				<td><label for="nome_area">Nome da √°rea</label>
 				</td>
 				<td colspan="3"><%=((ImpressaoBean)request.getAttribute("impressao")).getNomeArea() %></td>
 
@@ -110,7 +110,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="codigo_localizacao">LocalizaÁ„o</label>
+				<td><label for="codigo_localizacao">Localiza√ß√£o</label>
 				</td>
 				<td colspan="3" style="FONT-SIZE: small;">
 				<%=((ImpressaoBean)request.getAttribute("impressao")).getCodLocalizacao() %>
@@ -123,7 +123,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="qt_uhs_mapeada">N˙mero Uhs Mapeadas</label></td>
+				<td><label for="qt_uhs_mapeada">N√∫mero Uhs Mapeadas</label></td>
 				<td colspan=3 id="qt_uhs_mapeada_plus"></td>
 				<script type="text/javascript">
 				$(document).ready(function() {      
@@ -159,21 +159,21 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			</tr>
 	<tr>
 
-				<td><label for="area_em_projeto">¡rea em Projeto</label>
+				<td><label for="area_em_projeto">√Årea em Projeto</label>
 				</td>
 				
 				<td><%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == -1 ? "" : "" %>
-				<%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == 1 ? "sim" : "n„o?" %>
+				<%=((ImpressaoBean)request.getAttribute("impressao")).getAreaEmProjeto() == 1 ? "sim" : "n√£o?" %>
 				
 				
 				</td>
-				<td><label for="area_manancial">¡rea Manancial</label>
+				<td><label for="area_manancial">√Årea Manancial</label>
 				</td>
 				<td colspan=3>${impressao.codManancial}</td>
 			</tr>
 			
 			<tr>
-			<td><label for="codigo_situacao_propriedade">SituaÁ„o da Propriedade</label>
+			<td><label for="codigo_situacao_propriedade">Situa√ß√£o da Propriedade</label>
 				</td>
 				<td colspan="3">${impressao.codSituacaoPropriedade}</td>
 			
@@ -186,7 +186,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="obs_situacao_propriedade">ObservaÁıes
+				<td><label for="obs_situacao_propriedade">Observa√ß√µes
 						da Propriedade</label>
 				</td>
 				<td colspan="3"><%=((ImpressaoBean)request.getAttribute("impressao")).getObsSituacaoPropriedade() %></td>
@@ -197,7 +197,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="cod_Programa">SituaÁ„o da IntervenÁ„o (Programa)</label></td>
+				<td><label for="cod_Programa">Situa√ß√£o da Interven√ß√£o (Programa)</label></td>
 
 			<td>	<% if(request.getAttribute("consultaPrograma") != null)
 				{		
@@ -215,7 +215,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 				
 
-				<td><label for="codEstagio">SituaÁ„o da IntervenÁ„o (Est·gio)</label></td>
+				<td><label for="codEstagio">Situa√ß√£o da Interven√ß√£o (Est√°gio)</label></td>
 
 				<td>${consultaEstagio.codEstagio}</td>
 
@@ -225,13 +225,13 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="classGeral">ClassificaÁ„o Geral</label></td>
+				<td><label for="classGeral">Classifica√ß√£o Geral</label></td>
 
 				<td>${impressao.classGeral}</td>
 
 				
 
-				<td><label for="hierarq_prog">HierarquizaÁ„o no Programa</label></td>
+				<td><label for="hierarq_prog">Hierarquiza√ß√£o no Programa</label></td>
 
 				<td>${impressao.hierarquizacao}</td>
 
@@ -241,11 +241,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="dt_ocupacao">Ano de OcupaÁ„o - Doc</label>
+				<td><label for="dt_ocupacao">Ano de Ocupa√ß√£o - Doc</label>
 				</td>
 				<td>${impressao.dataOcupacaoDoc}</td>
 
-				<td><label for="dt_ocupacao_entrevista">Ano de OcupaÁ„o
+				<td><label for="dt_ocupacao_entrevista">Ano de Ocupa√ß√£o
 						- Segundo moradores</label>
 				</td>
 				<td>${impressao.dataOcupacaoEntrevista}</td>
@@ -289,8 +289,8 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 				
 
-				<td><label for="codigo_feicao_morfologica">FeiÁ„o
-						MorfolÛgica</label>
+				<td><label for="codigo_feicao_morfologica">Fei√ß√£o
+						Morfol√≥gica</label>
 				</td>
 				<td colspan=3>${impressao.codFeicaoMorfologica}</td>
 
@@ -311,7 +311,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 			<tr>
 
-				<td><label for="obs_judicial">ObservaÁıes Juridicas</label>
+				<td><label for="obs_judicial">Observa√ß√µes Juridicas</label>
 				</td>
 				<td colspan=3><%=((ImpressaoBean)request.getAttribute("impressao")).getObsJudicial() %></td>
 
@@ -320,12 +320,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			
 <tr class="topic">
 				<td colspan="4">
-					<h1>CARACTERIZA«√O FÕSICO-URBANÕSTICA</h1>
+					<h1>CARACTERIZA√á√ÉO F√çSICO-URBAN√çSTICA</h1>
 				</td>
 			</tr>
 			
 			<tr>
-				<td><label>DescriÁ„o<label></td>
+				<td><label>Descri√ß√£o<label></td>
 				<td colspan="3">${impressao.caracFiscoUrban}</td>
 				
 				
@@ -337,7 +337,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 			</tr>
 			
 			<tr>
-				<td><label>DescriÁ„o<label></td>
+				<td><label>Descri√ß√£o<label></td>
 				<td colspan="3">${impressao.pontoGps}</td>
 				
 				
@@ -352,20 +352,20 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 				<td colspan="3"></td>
 			</tr>
 			<tr>
-				<td><label>N˙mero da OcorrÍncia<label>
+				<td><label>N√∫mero da Ocorr√™ncia<label>
 				</td>
 				<td colspan="3"></td>
 			</tr>
 			<tr>
-				<td><label>EndereÁo<label>
+				<td><label>Endere√ßo<label>
 				</td>
 				<td colspan="3"></td>
 			</tr>
 			<tr>
-				<td><label>Respons·vel pela vistoria<label>
+				<td><label>Respons√°vel pela vistoria<label>
 				</td>
 				<td></td>
-				<td><label>N˙mero de casas vistoriadas<label>
+				<td><label>N√∫mero de casas vistoriadas<label>
 				</td>
 				<td></td>
 			</tr>
@@ -381,12 +381,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 				<td><label>Uhs<label>
 				</td>
 				<td></td>
-				<td><label>IntervenÁ„o Indicada<label>
+				<td><label>Interven√ß√£o Indicada<label>
 				</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><label>ObservaÁ„o<label>
+				<td><label>Observa√ß√£o<label>
 				</td>
 				<td colspan="3"></td>
 			</tr>

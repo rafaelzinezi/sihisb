@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html"%>
+Ôªø<%@ page language="java" contentType="text/html"%>
     
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -12,10 +12,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -33,11 +33,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol· <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Ol√° <%=usuario.getLogin() %></div>
 <div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU¡RIOS</a>
+						<li class="administradorOnly"><a href="#">USU√ÅRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -125,10 +125,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	</div>
 		
 	<div id="content">
-		<h1>SIHISB - Usu·rios</h1>
+		<h1>SIHISB - Usu√°rios</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul·rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formul√°rio.
 		</div>
 		
 			<%if(request.getAttribute("mensagem") != null){%>
@@ -144,12 +144,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			<fieldset class="step">
 				<legend>Consultar</legend>
 				<p class="width100">
-					<label for="nome_usuario" >Nome Usu·rio</label> 
+					<label for="nome_usuario" >Nome Usu√°rio</label> 
 					<input id="nome_usuario" name="nome_usuario" size="50" value="<%=request.getAttribute("nome_usuario") %>"/>
 				</p>
 				
 				<p class="width100">
-					<label for="matricula" >Matricula do Usu·rio</label> 
+					<label for="matricula" >Matricula do Usu√°rio</label> 
 					<input id="matricula" name="matricula" value="<%=request.getAttribute("matricula") %>"/>
 				</p>
 				
@@ -159,8 +159,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				<table border="0">
 					<tr>
 						<th><img src="images/arrow_more.png" /> <b>Matricula</b></th>
-						<th><img src="images/arrow_more.png" /> <b>Nome do Usu·rio</b></th>
-						<th width="60"><img src="images/arrow_more.png" /> <b>AÁ„o</b></th>
+						<th><img src="images/arrow_more.png" /> <b>Nome do Usu√°rio</b></th>
+						<th width="60"><img src="images/arrow_more.png" /> <b>A√ß√£o</b></th>
 					</tr>
 					<%
 						if(request.getAttribute("usuarioList") != null){
@@ -201,7 +201,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			
 		</div></div>
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO
+			Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html"%>
+Ôªø<%@ page language="java" contentType="text/html"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@page import="br.gov.sp.saobernardo.sehab.loginBean.LoginBean" %>
 <%  
@@ -6,12 +6,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 %>  
 <html>
 <head>
-	<title>Prefeitura de S„o Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de S√£o Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -48,11 +48,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol· <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Ol√° <%=usuario.getLogin() %></div>
 	<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU¡RIOS</a>
+						<li class="administradorOnly"><a href="#">USU√ÅRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -141,10 +141,10 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	</div>
 		
 	<div id="content">
-		<h1>SIHISB - Cadastro de Usu·rios</h1>
+		<h1>SIHISB - Cadastro de Usu√°rios</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul·rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formul√°rio.
 		</div>
 
 		<div id="wrapper">
@@ -158,28 +158,28 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 					<%}%>				
 				
 					<fieldset class="step">
-						<legend>Dados do Usu·rio</legend>
+						<legend>Dados do Usu√°rio</legend>
 							<p class="width100">
-								<label for="nome_usuario" >Nome do Usu·rio</label> 
+								<label for="nome_usuario" >Nome do Usu√°rio</label> 
 								<input type="text" id="nome_usuario" name="nome_usuario" class="required" AUTOCOMPLETE=OFF  value="<%=((LoginBean)request.getAttribute("cadastro")).getLogin() %>" />
 							</p>
 							<p class="width100">
-								<label for="matricula" >MatrÌcula</label> 
+								<label for="matricula" >Matr√≠cula</label> 
 								<input type="text" id="matricula" name="matricula" class="required" AUTOCOMPLETE=OFF  value="<%=((LoginBean)request.getAttribute("cadastro")).getMatricula() %>" />
 							</p>
 							<p class="width100">
-								<label for="grupo" >Grupo de Usu·rio</label> 
+								<label for="grupo" >Grupo de Usu√°rio</label> 
 								<select id="grupo" name="grupo" class="required">
 									<option value="-1">Selecione</option>
 									<option value="1" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 1 ? "SELECTED" : ""%> >Administrador</option>
-									<option value="2" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 2 ? "SELECTED" : ""%> >Usu·rio EdiÁ„o</option>
-									<option value="3" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 3 ? "SELECTED" : ""%> >Usu·rio</option>
+									<option value="2" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 2 ? "SELECTED" : ""%> >Usu√°rio Edi√ß√£o</option>
+									<option value="3" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 3 ? "SELECTED" : ""%> >Usu√°rio</option>
 									<option value="1" <%= ((LoginBean)request.getAttribute("cadastro")).getGrupo() == 4 ? "SELECTED" : ""%> >Administrador Usuario</option>
 									
 								</select>
 							</p>
 							<p class="width100">
-								<label for="modulo" >MÛdulo de Acesso</label> 
+								<label for="modulo" >M√≥dulo de Acesso</label> 
 								<select id="modulo" name="modulo" class="required">
 									<option value="-1">Selecione</option>
 								<option value="1" <%= ((LoginBean)request.getAttribute("cadastro")).getModulo() == 1 ? "SELECTED" : ""%> >BCDEF</option>
@@ -229,14 +229,14 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 						<legend>Confirme</legend>
 						<br /><br />
 						<div style="width: 1000px;text-align:center; ">
-							<h2>Confirmar cadastro Usu·rio?</h2>
+							<h2>Confirmar cadastro Usu√°rio?</h2>
 						</div>
 						<br />
 						<center>
 						<table border="0" style="width: 200px">
 							<tr>
 								<td><button id="registerButton" type="submit" onclick="return verificaSubmit()">Sim</button></td>
-								<td><button type="Button" onClick="$('#aDadosGerais').click();">N„o</button></td>
+								<td><button type="Button" onClick="$('#aDadosGerais').click();">N√£o</button></td>
 							</tr>
 						</table>
 						</center>
@@ -285,7 +285,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		</div>
 		
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITA«√O DE S√O BERNARDO DO CAMPO
+			Copyright ¬© 2012 - SECRETARIA DE HABITA√á√ÉO DE S√ÉO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

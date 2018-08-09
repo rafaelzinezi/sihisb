@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html" %>
+ï»¿<%@ page language="java" contentType="text/html" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean"%>
@@ -27,12 +27,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -70,11 +70,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">OlÃ¡ <%=usuario.getLogin() %></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
+						<li class="administradorOnly"><a href="#">USUÃRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -166,7 +166,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			<h1>SIHISB - Cadastro de Assentamentos</h1>
 			
 			<div id="erros" style="display: none;">
-				Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
+				Favor, verifique os campos destacados em <b>vermelho</b> no formulÃ¡rio.
 			</div>
 			
 			<div id="wrapper">
@@ -179,25 +179,25 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					<form id="formElem" name="formElem" method="get" action="cadastroCaracterizacao">
 					<%}%>				
 						<fieldset class="step">
-						<input type="hidden">Ultima alteração feita por:<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getUsuario()%> em <%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getData()%> </input> 
-							<legend>Caracterização</legend>
+						<input type="hidden">Ultima alteraÃ§Ã£o feita por:<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getUsuario()%> em <%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getData()%> </input> 
+							<legend>CaracterizaÃ§Ã£o</legend>
 							<div class="colunas">
 								<p>
-									<label for="codigo_xxx" >Cód. Habitação</label> 
+									<label for="codigo_xxx" >CÃ³d. HabitaÃ§Ã£o</label> 
 									
 									
 									<input type="text" id="codigo_xxx" name="codigo_xxx" class="smallInput" AUTOCOMPLETE=OFF tabindex="1" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>"  <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
-									<label for="codigo_funep" class="smallLabel">Código Funep</label> 
+									<label for="codigo_funep" class="smallLabel">CÃ³digo Funep</label> 
 									<input type="text" id="codigo_funep" name="codigo_funep" class="required smallInput" AUTOCOMPLETE=OFF tabindex="2" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %>/>
 								</p>
 	
 								<p>
-									<label for="nome_area">Nome da área</label> 
+									<label for="nome_area">Nome da Ã¡rea</label> 
 									<input type="text" id="nome_area" name="nome_area" class="required" AUTOCOMPLETE=OFF tabindex="3" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()== "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()%>"  />
 								</p>
 	
 								<p>
-									<label for="id_regiao_operacao">Região Op</label> 
+									<label for="id_regiao_operacao">RegiÃ£o Op</label> 
 									<input type="text" id="cod_regiao_op" name="cod_regiao_op" tabindex="4" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodRegiaoOp()%>" />
 									
 								</p>
@@ -220,13 +220,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</p>
 	
 								<p>
-									<label for="codigo_localizacao">Localização</label> 
+									<label for="codigo_localizacao">LocalizaÃ§Ã£o</label> 
 									<input type="text" id="codigo_localizacao" name="codigo_localizacao" tabindex="6" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodLocalizacao()%>"/>
 														
 								</p>
 	
 								<p>
-									<label for="qt_uhs_mapeada">Nº Uhs Mapeadas</label> 
+									<label for="qt_uhs_mapeada">NÂº Uhs Mapeadas</label> 
 									<input class="smallInput" id="qt_uhs_mapeada" name="qt_uhs_mapeada" onchange="setValueMapeadaPlus(this.value)" AUTOCOMPLETE=OFF tabindex="7" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNumUhsMapeadas()%>" class="required"/>
 									<script type="text/javascript">
 
@@ -289,11 +289,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</p>
 								<p>
 
-								<label for="area_em_projeto">Área em Projeto</label>
+								<label for="area_em_projeto">Ãrea em Projeto</label>
 								<select id="area_em_projeto" name="area_em_projeto" tabindex=12>
 								<option value="">Selecione</option>
 										<option value="1" <%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getAreaEmProjeto() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getAreaEmProjeto() == 2 ? "SELECTED" : ""%> >Não</option>
+										<option value="2" <%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getAreaEmProjeto() == 2 ? "SELECTED" : ""%> >NÃ£o</option>
 									</select>
 
 							</p>
@@ -317,7 +317,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</p>
 	
 								<p>
-									<label for="id_situacao_propriedade">Situação Propriedade</label> 
+									<label for="id_situacao_propriedade">SituaÃ§Ã£o Propriedade</label> 
 									<select id="codigo_situacao_propriedade" name="codigo_situacao_propriedade" tabindex="14"  multiple="multiple">
 										<%
 											if(request.getAttribute("allSituacaoPropriedade") != null){
@@ -334,7 +334,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								  </select>
 								</p>
 								<p>
-									<label for="obs_situacao_propriedade" class="bigLabel">Observações</label> 
+									<label for="obs_situacao_propriedade" class="bigLabel">ObservaÃ§Ãµes</label> 
 									<textarea id="obs_situacao_propriedade" name="obs_situacao_propriedade" class="specialTextArea" tabindex="15" ><%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getObsSituacaoPropriedade()%></textarea>
 									<script type="text/javascript" >
 								(function($) {
@@ -353,7 +353,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 							<p>
 
-								<label for="id_situacao_propriedade" class="bigLabel">Situação da Intervenção</label> 
+								<label for="id_situacao_propriedade" class="bigLabel">SituaÃ§Ã£o da IntervenÃ§Ã£o</label> 
 
 								<br/><br/><br/>
 
@@ -373,7 +373,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 
-								<label for="cod_estagio" class="smallLabel">Estágio</label> 
+								<label for="cod_estagio" class="smallLabel">EstÃ¡gio</label> 
 
 								<select id="cod_estagio" name="cod_estagio" tabindex=17>
 
@@ -395,17 +395,17 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 							<p>
 
-								<label for="classGeral" >Classificação Geral</label> 
+								<label for="classGeral" >ClassificaÃ§Ã£o Geral</label> 
 
 								<input type="text" id="classGeral" name="classGeral" class="smallInput" AUTOCOMPLETE=OFF tabindex=18 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()== "null" ? "" :((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()%>"/>
 
-								<label for="hierarq_prog" class="smallLabel">Hierarquização no Programa</label> 
+								<label for="hierarq_prog" class="smallLabel">HierarquizaÃ§Ã£o no Programa</label> 
 
 								<input type="text" id="hierarq_prog" name="hierarq_prog" class="smallInput" AUTOCOMPLETE=OFF tabindex=19 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getHierarquizacao()%>" />
 
 							</p>
 								<p>
-									<label class="bigLabel">Ano de Ocupação</label> 
+									<label class="bigLabel">Ano de OcupaÃ§Ã£o</label> 
 									<label for="dt_ocupacao" class="smallLabel">Documentado</label> 
 									<input id="dt_ocupacao" name="dt_ocupacao" class="smallInput" AUTOCOMPLETE=OFF tabindex="20" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getDataOcupacaoDoc()%>" class="required"/>
 									<label for="dt_ocupacao_entrevista" class="smallLabel">Moradores</label> 
@@ -447,7 +447,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</p>
 	
 								<p>
-									<label for="codigo_feicao_morfologica">Feição Morfológica</label>
+									<label for="codigo_feicao_morfologica">FeiÃ§Ã£o MorfolÃ³gica</label>
 									<input type="text" id="codigo_feicao_morfologica" name="codigo_feicao_morfologica" tabindex="23" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFeicaoMorfologica()%>"/>
 										
 								</p>
@@ -458,7 +458,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</p>
 								
 								<p>
-								<label for="obs_judicial" class="bigLabel">Observações Juridicas</label> 
+								<label for="obs_judicial" class="bigLabel">ObservaÃ§Ãµes Juridicas</label> 
 								<textarea id="obs_judicial" name="obs_judicial" class="specialTextArea" style= "height: 253px" tabindex="25"><%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getObsJudicial()%> </textarea>
 								<script type="text/javascript" >
 								(function($) {
@@ -469,9 +469,9 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</script>
 								</p>
 							</div>
-							<legend>Caracterização Físico-Urbanística</legend>
+							<legend>CaracterizaÃ§Ã£o FÃ­sico-UrbanÃ­stica</legend>
 							<p class="width100">
-								<label for="car_fis_urb" class="bigLabel">Descrição</label> 
+								<label for="car_fis_urb" class="bigLabel">DescriÃ§Ã£o</label> 
 								<textarea id="car_fis_urb" name="car_fis_urb" class="specialTextArea" tabindex="26"><%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCaracFiscoUrban()%></textarea>
 								<script type="text/javascript" >
 								(function($) {
@@ -483,7 +483,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<legend>Pontos de GPS</legend>
 							<p class="width100">
-								<label for="p_gps" class="bigLabel">Descrição</label> 
+								<label for="p_gps" class="bigLabel">DescriÃ§Ã£o</label> 
 								<textarea id="p_gps" name="p_gps" class="specialTextArea" tabindex="27"><%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getPontoGps()%></textarea>
 								<script type="text/javascript" >
 								(function($) {
@@ -541,7 +541,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							<br /><br />
 							<div style="width: 1000px; text-align:center; ">
 								<%if(request.getAttribute("update") != null){%>
-								<h2>Confirmar alteração de Cadastro?</h2>
+								<h2>Confirmar alteraÃ§Ã£o de Cadastro?</h2>
 								<%}else{%>
 								<h2>Confirmar cadastro de Cadastro?</h2>
 								<%}%>
@@ -551,7 +551,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							<table border="0" style="width: 200px">
 								<tr>
 									<td><button id="registerButton" type="submit" onclick="return verificaSubmit()">Sim</button></td>
-									<td><button id="registerButton" type="Button" onClick="javascript:mainPage()">Não</button></td>
+									<td><button id="registerButton" type="Button" onClick="javascript:mainPage()">NÃ£o</button></td>
 									
 								</tr>
 							</table>
@@ -573,7 +573,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		
 			<div id="rodape">
 			
-				Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+				Copyright Â© 2012 - SECRETARIA DE HABITAÃ‡ÃƒO DE SÃƒO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

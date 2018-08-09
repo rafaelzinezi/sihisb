@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html"%>
+ï»¿<%@ page language="java" contentType="text/html"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean"%>
@@ -22,12 +22,12 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de SÃ£o Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -60,11 +60,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-			<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
+			<div style="position: absolute;right:200px;top:140px">OlÃ¡ <%=usuario.getLogin() %></div>
 				<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
+						<li class="administradorOnly"><a href="#">USUÃRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -155,7 +155,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		
 		
 		<div id="content">
-			<h1>SIHISB - Cadastro de Usuários</h1>
+			<h1>SIHISB - Cadastro de UsuÃ¡rios</h1>
 			
 			<%if(request.getAttribute("mensagem") != null){%>
 			<div id="secess">
