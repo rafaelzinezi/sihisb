@@ -14,10 +14,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de Sï¿½o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Polï¿½tica Habitacional no municï¿½pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAï¿½ï¿½O MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -35,11 +35,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olï¿½ <%=usuario.getLogin() %></div>
 <div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
+						<li class="administradorOnly"><a href="#">USUï¿½RIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -102,12 +102,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					
 				</li>
 				
-				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
+				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSï¿½O<br/>USO</a>
 					
 				</li>
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 
@@ -137,7 +137,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<h1>SIHISB - Consulta de Assentamentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulï¿½rio.
 		</div>
 		
 			<%if(request.getAttribute("mensagem") != null){%>
@@ -162,9 +162,9 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				<legend>Resultado</legend>
 				<table border="0">
 					<tr>
-						<th><img src="images/arrow_more.png" /> <b>Código</b></th>
+						<th><img src="images/arrow_more.png" /> <b>Cï¿½digo</b></th>
 						<th><img src="images/arrow_more.png" /> <b>Nome do Emprendimento</b></th>
-						<th width="60"><img src="images/arrow_more.png" /> <b>Ação</b></th>
+						<th width="60"><img src="images/arrow_more.png" /> <b>Aï¿½ï¿½o</b></th>
 					</tr>
 					<%
 						if(request.getAttribute("empreendimentoList") != null){
@@ -212,7 +212,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			
 		</div></div>
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+			Copyright ï¿½ 2012 - SECRETARIA DE HABITAï¿½ï¿½O DE Sï¿½O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

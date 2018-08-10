@@ -94,7 +94,7 @@
 				<li><a href="index.html">HOME</a></li>
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 

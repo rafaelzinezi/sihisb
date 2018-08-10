@@ -8,15 +8,15 @@
 
 <head>
 
-	<title>Prefeitura de São Bernardo do Campo - SIHISB</title>
+	<title>Prefeitura de Sï¿½o Bernardo do Campo - SIHISB</title>
 
 
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Polï¿½tica Habitacional no municï¿½pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAï¿½ï¿½O MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -94,13 +94,13 @@ if(usuario == null){
 		<div id="logo"></div>
 				<div id="logo_sihisb"></div>
 		
-		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olï¿½ <%=usuario.getLogin() %></div>
 		<div id="menu">
 			<ul id="lista-menu">
 				<li><a href="paginaInicial">HOME</a></li>
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 
@@ -130,7 +130,7 @@ if(usuario == null){
 
 		<h1>SIHISB - Alterar Senha</h1>	
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulï¿½rio.
 		</div>
 		
 			<%if(request.getAttribute("msg") != null){%>
@@ -201,7 +201,7 @@ if(usuario == null){
 							}
 							if(pwd_nova != pwd_confirma)
 							{
-								alert('Senhas não conferem.');
+								alert('Senhas nï¿½o conferem.');
 								$("#nova_senha").val("");
 								$("#confirma_senha").val("");
 								$("#nova_senha").focus();
@@ -224,7 +224,7 @@ if(usuario == null){
 		<div id="rodape">
 
 
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+			Copyright ï¿½ 2012 - SECRETARIA DE HABITAï¿½ï¿½O DE Sï¿½O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
