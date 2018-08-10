@@ -8,14 +8,14 @@
 
 <head>
 
-	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de Sï¿½o Bernardo do Campo - Sihisb</title>
 
 
 
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Polï¿½tica Habitacional no municï¿½pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAï¿½ï¿½O MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -129,7 +129,7 @@
 
 		<div id="erros" style="display: none;">
 
-			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulï¿½rio.
 
 		</div>
 
@@ -151,13 +151,13 @@
 						</div>
 						<%}%>
 
-							<p class="width100" style="padding: 20px 0 20px 0">Digite no campo abaixo o e-mail que você cadastrou anteriormente para que sua senha seja enviada para seu e-mail.</p>
+							<p class="width100" style="padding: 20px 0 20px 0">Digite no campo abaixo o e-mail que vocï¿½ cadastrou anteriormente para que sua senha seja enviada para seu e-mail.</p>
 
 							<p class="width100" style="margin-top: 20px">
 
 								<label for="email" >E-mail</label> 
 
-								<input type="text" id="email" name="email" class="required" AUTOCOMPLETE=OFF tabindex="1" />
+								<input type="text" id="email" name="email" class="required" tabindex="1" />
 
 							</p>
 
@@ -211,7 +211,7 @@
 
 		<div id="rodape">
 
-		Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+		Copyright ï¿½ 2012 - SECRETARIA DE HABITAï¿½ï¿½O DE Sï¿½O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

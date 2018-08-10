@@ -186,14 +186,14 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 									<label for="codigo_xxx" >Cód. Habitação</label> 
 									
 									
-									<input type="text" id="codigo_xxx" name="codigo_xxx" class="smallInput" AUTOCOMPLETE=OFF tabindex="1" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>"  <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
+									<input type="text" id="codigo_xxx" name="codigo_xxx" class="smallInput" tabindex="1" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>"  <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
 									<label for="codigo_funep" class="smallLabel">Código Funep</label> 
-									<input type="text" id="codigo_funep" name="codigo_funep" class="required smallInput" AUTOCOMPLETE=OFF tabindex="2" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %>/>
+									<input type="text" id="codigo_funep" name="codigo_funep" class="required smallInput" tabindex="2" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodFunep()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %>/>
 								</p>
 	
 								<p>
 									<label for="nome_area">Nome da área</label> 
-									<input type="text" id="nome_area" name="nome_area" class="required" AUTOCOMPLETE=OFF tabindex="3" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()== "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()%>"  />
+									<input type="text" id="nome_area" name="nome_area" class="required" tabindex="3" value="<%=((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()== "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNomeArea()%>"  />
 								</p>
 	
 								<p>
@@ -227,7 +227,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	
 								<p>
 									<label for="qt_uhs_mapeada">Nº Uhs Mapeadas</label> 
-									<input class="smallInput" id="qt_uhs_mapeada" name="qt_uhs_mapeada" onchange="setValueMapeadaPlus(this.value)" AUTOCOMPLETE=OFF tabindex="7" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNumUhsMapeadas()%>" class="required"/>
+									<input class="smallInput" id="qt_uhs_mapeada" name="qt_uhs_mapeada" onchange="setValueMapeadaPlus(this.value)" tabindex="7" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getNumUhsMapeadas()%>" class="required"/>
 									<script type="text/javascript">
 
 								$("#qt_uhs_mapeada").change(function() {      
@@ -260,7 +260,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 								<label for="cad_unidades">Unidades Cadastradas</label> 
 
-								<input type="text" id="cad_unidades" name="cad_unidades"  AUTOCOMPLETE=OFF tabindex=9 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCadunidades() == "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCadunidades()%>"/>
+								<input type="text" id="cad_unidades" name="cad_unidades"  tabindex=9 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCadunidades() == "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCadunidades()%>"/>
 
 							</p>
 								
@@ -397,19 +397,19 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 								<label for="classGeral" >Classificação Geral</label> 
 
-								<input type="text" id="classGeral" name="classGeral" class="smallInput" AUTOCOMPLETE=OFF tabindex=18 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()== "null" ? "" :((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()%>"/>
+								<input type="text" id="classGeral" name="classGeral" class="smallInput" tabindex=18 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()== "null" ? "" :((CaracterizacaoBean)request.getAttribute("caracterizacao")).getClassGeral()%>"/>
 
 								<label for="hierarq_prog" class="smallLabel">Hierarquização no Programa</label> 
 
-								<input type="text" id="hierarq_prog" name="hierarq_prog" class="smallInput" AUTOCOMPLETE=OFF tabindex=19 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getHierarquizacao()%>" />
+								<input type="text" id="hierarq_prog" name="hierarq_prog" class="smallInput" tabindex=19 value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getHierarquizacao()%>" />
 
 							</p>
 								<p>
 									<label class="bigLabel">Ano de Ocupação</label> 
 									<label for="dt_ocupacao" class="smallLabel">Documentado</label> 
-									<input id="dt_ocupacao" name="dt_ocupacao" class="smallInput" AUTOCOMPLETE=OFF tabindex="20" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getDataOcupacaoDoc()%>" class="required"/>
+									<input id="dt_ocupacao" name="dt_ocupacao" class="smallInput" tabindex="20" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getDataOcupacaoDoc()%>" class="required"/>
 									<label for="dt_ocupacao_entrevista" class="smallLabel">Moradores</label> 
-									<input id="dt_ocupacao_entrevista" name="dt_ocupacao_entrevista" class="smallInput" AUTOCOMPLETE=OFF tabindex="19" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getDataOcupacaoEntrevista()%>" class="required"/>
+									<input id="dt_ocupacao_entrevista" name="dt_ocupacao_entrevista" class="smallInput" tabindex="19" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getDataOcupacaoEntrevista()%>" class="required"/>
 								</p>
 								
 								<p>
@@ -454,7 +454,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	
 								<p>
 									<label for="codigo_gravames_judiciais">Gravames Judiciais</label> 
-									<input id="codigo_gravames_judiciais" name="codigo_gravames_judiciais" autocomplete=OFF tabindex="24" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodGravamesJudiciais() == "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodGravamesJudiciais()%>" />
+									<input id="codigo_gravames_judiciais" name="codigo_gravames_judiciais" tabindex="24" value="<%= ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodGravamesJudiciais() == "-1" ? "" : ((CaracterizacaoBean)request.getAttribute("caracterizacao")).getCodGravamesJudiciais()%>" />
 								</p>
 								
 								<p>

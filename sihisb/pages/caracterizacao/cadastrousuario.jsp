@@ -161,11 +161,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 						<legend>Dados do Usuário</legend>
 							<p class="width100">
 								<label for="nome_usuario" >Nome do Usuário</label> 
-								<input type="text" id="nome_usuario" name="nome_usuario" class="required" AUTOCOMPLETE=OFF  value="<%=((LoginBean)request.getAttribute("cadastro")).getLogin() %>" />
+								<input type="text" id="nome_usuario" name="nome_usuario" class="required"  value="<%=((LoginBean)request.getAttribute("cadastro")).getLogin() %>" />
 							</p>
 							<p class="width100">
 								<label for="matricula" >Matrícula</label> 
-								<input type="text" id="matricula" name="matricula" class="required" AUTOCOMPLETE=OFF  value="<%=((LoginBean)request.getAttribute("cadastro")).getMatricula() %>" />
+								<input type="text" id="matricula" name="matricula" class="required"  value="<%=((LoginBean)request.getAttribute("cadastro")).getMatricula() %>" />
 							</p>
 							<p class="width100">
 								<label for="grupo" >Grupo de Usuário</label> 
@@ -202,22 +202,22 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							</p>
 							 <p class="width100">
 								<label for="email" >Email</label> 
-								<input type="text" id="email" name="email" class="required" AUTOCOMPLETE=OFF value="<%=((LoginBean)request.getAttribute("cadastro")).getEmail() %>" />
+								<input type="text" id="email" name="email" class="required" value="<%=((LoginBean)request.getAttribute("cadastro")).getEmail() %>" />
 							</p> 
 
 
 							<%if(request.getAttribute("update") != null){%>
 								 <p class="width100">
 									<label for="senha" >Senha</label> 
-									<input type="password" id="senha" name="senha" AUTOCOMPLETE=OFF value="<%=((LoginBean)request.getAttribute("cadastro")).getSenha() %>" readonly="true"/>
+									<input type="password" id="senha" name="senha" value="<%=((LoginBean)request.getAttribute("cadastro")).getSenha() %>" readonly="true"/>
 								</p> 
 								 <p class="width100">
 									<label for="novaSenha" >Nova Senha</label> 
-									<input type="password" id="novaSenha" name="novaSenha" AUTOCOMPLETE=OFF value=""/>
+									<input type="password" id="novaSenha" name="novaSenha" value=""/>
 								</p> 
 								 <p class="width100">
 									<label for="novaSenhaConf" >Repetir Nova Senha</label> 
-									<input type="password" id="novaSenhaConf" name="novaSenhaConf" AUTOCOMPLETE=OFF value="" value=""/>
+									<input type="password" id="novaSenhaConf" name="novaSenhaConf" value="" value=""/>
 								</p> 
 
 							<%}%>

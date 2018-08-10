@@ -27,7 +27,7 @@ if(usuario == null){
 
 <head>
 
-<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de Sï¿½o Bernardo do Campo - Sihisb</title>
 <script>
 var optionCombo = "";
 <%if(request.getAttribute("allEscolaridade") != null){
@@ -64,8 +64,8 @@ var optionCombo3 = "";
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Polï¿½tica Habitacional no municï¿½pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAï¿½ï¿½O MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -116,11 +116,11 @@ var optionCombo3 = "";
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin()%></div>
+		<div style="position: absolute;right:200px;top:140px">Olï¿½ <%=usuario.getLogin()%></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
+						<li class="administradorOnly"><a href="#">USUï¿½RIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -183,7 +183,7 @@ var optionCombo3 = "";
 					
 				</li>
 				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
+				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSï¿½O<br/>USO</a>
 					
 				</li>
 				<li>
@@ -216,10 +216,10 @@ var optionCombo3 = "";
 		
 
 	<div id="content">
-		<h1>SIHISB - Cadastro de Família</h1>
+		<h1>SIHISB - Cadastro de Famï¿½lia</h1>
 		<div id="erros" style="display: none;">
 			Favor, verifique os campos destacados em <b>vermelho</b> no
-			formulário.
+			formulï¿½rio.
 		</div>
 		<div id="wrapper">
 			<div id="steps">
@@ -232,7 +232,7 @@ var optionCombo3 = "";
 								
 					<fieldset class="step">
 					
-					<legend>Cadastro de Munícipe</legend>
+					<legend>Cadastro de Munï¿½cipe</legend>
 				
 					<div class="colunas">
 					
@@ -241,11 +241,11 @@ var optionCombo3 = "";
 							<input type="text" id="assentamento" name="assentamento" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeArea()%>">
 																		
 							<label for="n_selo" class="smallLabel">Selo</label> 
-							<input type="text" id="n_selo" name="n_selo" AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getSelo()%>" />
+							<input type="text" id="n_selo" name="n_selo" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getSelo()%>" />
 						</p>
 						<p>
-							<label for="n_cadastro">Número do Cadastro</label> 
-							<input type="text" id="n_cadastro" name="n_cadastro" AUTOCOMPLETE=OFF readonly=readonly value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNumeroCadastro()%>"/>
+							<label for="n_cadastro">Nï¿½mero do Cadastro</label> 
+							<input type="text" id="n_cadastro" name="n_cadastro" readonly=readonly value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNumeroCadastro()%>"/>
 							<script type="text/javascript">
 									(function($) {
 										$('#n_selo').change(function() {
@@ -256,7 +256,7 @@ var optionCombo3 = "";
 											}
 											else
 										{
-												alert('Não deixe de selecionar o Assentamento e Selo');
+												alert('Nï¿½o deixe de selecionar o Assentamento e Selo');
 												$('#assentamento').focus();
 											}
 										});
@@ -274,21 +274,21 @@ var optionCombo3 = "";
 						</p>
 							<p>
 							<label for="projeto">Projeto</label>
-							<input type="text"	id="projeto" name="projeto" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getProjeto() %>" />
+							<input type="text"	id="projeto" name="projeto" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getProjeto() %>" />
 							</p>
 							
 							<p>
-								<label for="nome_1_responsavel">Nome do 1º Responsável</label> <input
+								<label for="nome_1_responsavel">Nome do 1ï¿½ Responsï¿½vel</label> <input
 									type="text" id="nome_1_responsavel" name="nome_1_responsavel"
-									AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomePrimResponsavel()%>"/>
+									value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomePrimResponsavel()%>"/>
 							</p>
 							<p>
 								<label for="cpf">CPF</label> <input type="text" id="cpf"
-									name="cpf" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpf()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
+									name="cpf" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpf()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
 							</p>
 							<p>
 								<label for="rg" class="smallLabel">RG</label> <input type="text" id="rg" name="rg"
-									AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRg()%>" />
+									class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRg()%>" />
 														
 								<label for="uf" class="smallLabel">UF</label> 
 								<select id="uf" name="uf" class="smallLabel">
@@ -305,46 +305,46 @@ var optionCombo3 = "";
 								  </select>
 							</p>
 							<p>
-								<label for="bolsa_familia">Bolsa Família</label> 
+								<label for="bolsa_familia">Bolsa Famï¿½lia</label> 
 								<select id="bolsa_familia" name="bolsa_familia" class="smallLabel">
 										<option value="-1">Selecione</option>
 										<option value="1" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 2 ? "SELECTED" : ""%> >Não</option>
+										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getBolsaFamilia() == 2 ? "SELECTED" : ""%> >Nï¿½o</option>
 									</select>
 							
 								<label for="recebe" class="smallLabel">Recebe</label> <select id="recebe"
 									name="recebe" class="smallLabel">
 									<option value="-1">Selecione</option>
 										<option value="1" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 2 ? "SELECTED" : ""%> >Não</option>
+										<option value="2" <%= ((CadastroProjetoBean)request.getAttribute("projeto")).getRecebe() == 2 ? "SELECTED" : ""%> >Nï¿½o</option>
 									</select>
 							</p>
 							
 							<p>
-								<label for="n_inscricao_social">Número da Inscrição
+								<label for="n_inscricao_social">Nï¿½mero da Inscriï¿½ï¿½o
 									Social</label> <input type="text" id="n_inscricao_social"
-									name="n_inscricao_social" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getnIs()%>" />
+									name="n_inscricao_social" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getnIs()%>" />
 							</p>
 							<p>
 								<label for="telefone">Telefone</label> <input
-									type="text" id="telefone" name="telefone" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTelefone()%>"/>
+									type="text" id="telefone" name="telefone" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTelefone()%>"/>
 							</p>
 							
 							
 						</div>
 						<div class="colunas">
 						<p>
-								<label for="nome_2_responsavel">Nome do 2º Responsável</label> <input
+								<label for="nome_2_responsavel">Nome do 2ï¿½ Responsï¿½vel</label> <input
 									type="text" id="nome_2_responsavel" name="nome_2_responsavel"
-									AUTOCOMPLETE=OFF  value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeSegResponsavel()%>"/>
+									 value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeSegResponsavel()%>"/>
 							</p>
 							<p>
 								<label for="cpf2">CPF</label> 
-								<input type="text" id="cpf2" name="cpf2" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpfSeg() %>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
+								<input type="text" id="cpf2" name="cpf2" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpfSeg() %>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
 							</p>
 							<p>
 								<label for="rg2" class="smallLabel">RG</label> 
-								<input type="text" id="rg2"	name="rg2" AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRgSeg() %>" />
+								<input type="text" id="rg2"	name="rg2" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRgSeg() %>" />
 							
 								<label for="uf2" class="smallLabel">UF</label>
 								 <select id="uf2" name="uf2" class="smallLabel">
@@ -363,29 +363,29 @@ var optionCombo3 = "";
 						
 							
 							<p>
-								<label for="endereco">Endereço</label> <input type="text"
-									id="endereco" name="endereco" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getEndereco()%>" />
+								<label for="endereco">Endereï¿½o</label> <input type="text"
+									id="endereco" name="endereco" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getEndereco()%>" />
 							</p>
 							<p>
-								<label for="tempo_imovel">Tempo de Moradia no Imóvel</label> <input
+								<label for="tempo_imovel">Tempo de Moradia no Imï¿½vel</label> <input
 									type="text" id="tempo_imovel" style="width: 250px"
-									name="tempo_imovel" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMoradia()%>" /> Anos
+									name="tempo_imovel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMoradia()%>" /> Anos
 							</p>
 							<p>
-								<label for="tempo_area">Tempo de Moradia na Área</label> <input
+								<label for="tempo_area">Tempo de Moradia na ï¿½rea</label> <input
 									type="text" id="tempo_area" style="width: 250px"
-									name="tempo_area" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoArea()%>" /> Anos
+									name="tempo_area" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoArea()%>" /> Anos
 							</p>
 							<p>
-								<label for="tempo_municipio">Tempo de Moradia na Município</label>
-								 <input type="text" id="tempo_municipio" style="width: 250px" name="tempo_municipio" AUTOCOMPLETE=OFF  value = "<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMunicipio()%>"/>Anos
+								<label for="tempo_municipio">Tempo de Moradia na Municï¿½pio</label>
+								 <input type="text" id="tempo_municipio" style="width: 250px" name="tempo_municipio"  value = "<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMunicipio()%>"/>Anos
 							</p>
 							</div>
-							<legend>Histórico</legend>
+							<legend>Histï¿½rico</legend>
 
 						<p class="width100">
 
-								<label for="observacao" class="bigLabel">Descrição</label> 
+								<label for="observacao" class="bigLabel">Descriï¿½ï¿½o</label> 
 								<textarea id="observacao" name="observacao"	class="specialTextArea"><%=((CadastroProjetoBean)request.getAttribute("projeto")).getObservacoes()%></textarea>
 								<script type="text/javascript">
 									(function($) {
@@ -400,11 +400,11 @@ var optionCombo3 = "";
 								</script>
 							</p>
 						
-						<input type="hidden" AUTOCOMPLETE=OFF />
+						<input type="hidden" />
 					</fieldset>
 					
 					<fieldset class="step">
-						<legend>Composição Familiar</legend>
+						<legend>Composiï¿½ï¿½o Familiar</legend>
 						<p class="width100">
 							<button style="font-size: 14px; padding: 8px" onclick="criaComposicaoFamiliar()" type="Button" id="addIntFam" />
 							Adicionar Integrante Familiar
@@ -415,19 +415,19 @@ var optionCombo3 = "";
 							<table id="tabelaIntegrantes">
 								<tr>
 									<th></th>
-									<th><img src="./images/arrow_more.png" /> Nº Cadastro</th>
+									<th><img src="./images/arrow_more.png" /> Nï¿½ Cadastro</th>
 									<th><img src="./images/arrow_more.png" /> Nome</th>
 									<th><img src="./images/arrow_more.png" /> Parentesco</th>
 									<th><img src="./images/arrow_more.png" /> CPF</th>
 									<th><img src="./images/arrow_more.png" /> RG</th>
 									<th><img src="./images/arrow_more.png" /> Renda(R$)</th>
-									<th><img src="./images/arrow_more.png" /> Família</th>
+									<th><img src="./images/arrow_more.png" /> Famï¿½lia</th>
 									<th><img src="./images/arrow_more.png" /> Sexo</th>
 									<th><img src="./images/arrow_more.png" /> Idade</th>
 									<th><img src="./images/arrow_more.png" /> Cor</th>
 									<th><img src="./images/arrow_more.png" /> Escolaridade</th>
-									<th><img src="./images/arrow_more.png" /> Ocupação</th>
-									<th><img src="./images/arrow_more.png" /> Deficiência</th>
+									<th><img src="./images/arrow_more.png" /> Ocupaï¿½ï¿½o</th>
+									<th><img src="./images/arrow_more.png" /> Deficiï¿½ncia</th>
 								</tr>
 							<% ArrayList<ComposicaoFamiliarBean> compfam = (ArrayList)request.getAttribute("compfam");
 									for(int i=0; i < compfam.size(); i++){
@@ -496,7 +496,7 @@ var optionCombo3 = "";
 							<td><select id="dom_deficiencia" '+imprimiControle+'  name="dom_deficiencia[<%=i+1 %>]">
 							<option value="-1">Selecione</option>
 										<option value="1" <%=  compfam.get(i).getDeficiencia() == 1 ? "SELECTED" : ""%> >Sim</option>
-										<option value="2" <%=  compfam.get(i).getDeficiencia() == 2 ? "SELECTED" : ""%> >Não</option>
+										<option value="2" <%=  compfam.get(i).getDeficiencia() == 2 ? "SELECTED" : ""%> >Nï¿½o</option>
 									</select>
 							
 							</td>
@@ -521,7 +521,7 @@ var optionCombo3 = "";
 						<table border="0" style="width: 200px">
 							<tr>
 								<td><button id="registerButton" type="submit" onclick="return verificaSubmit()">Sim</button></td>
-								<td><button id="registerButton" type="Button" onClick="location.href=getPathName()">Não</button></td>
+								<td><button id="registerButton" type="Button" onClick="location.href=getPathName()">Nï¿½o</button></td>
 							</tr>
 						</table>
 						</center>
@@ -535,7 +535,7 @@ var optionCombo3 = "";
 				<ul>
 					<li class="selected"><a href="#"
 						onclick="location.href='#topo';">Dados Gerais</a></li>
-					<li><a href="#" onclick="location.href='#topo';">Composição
+					<li><a href="#" onclick="location.href='#topo';">Composiï¿½ï¿½o
 							Familiar</a></li>
 					<li><a href="#topo" onclick="location.href='#topo'">Confirme</a>
 					</li>
@@ -543,7 +543,7 @@ var optionCombo3 = "";
 			</div>
 		</div>
 		<div id="rodape">
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO <br />
+			Copyright ï¿½ 2012 - SECRETARIA DE HABITAï¿½ï¿½O DE Sï¿½O BERNARDO DO CAMPO <br />
 			Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000 <br /> PABX 4367 - 6400 
 			</div>
 		</div>

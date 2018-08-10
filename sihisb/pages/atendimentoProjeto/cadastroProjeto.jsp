@@ -178,16 +178,10 @@ var optionCombo3 = "";
 					</ul>
 
 				</li> 
-					<li class="BCDE BCD CDE CD DE D3"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
-					
-				</li>
+
 				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa"/>
+					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
 
 						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
 
@@ -240,11 +234,11 @@ var optionCombo3 = "";
 							<input type="text" id="assentamento" name="assentamento" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeArea()%>">
 																		
 							<label for="n_selo" class="smallLabel">Selo</label> 
-							<input type="text" id="n_selo" name="n_selo" AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getSelo()%>" />
+							<input type="text" id="n_selo" name="n_selo" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getSelo()%>" />
 						</p>
 						<p>
 							<label for="n_cadastro">Número do Cadastro</label> 
-							<input type="text" id="n_cadastro" name="n_cadastro" AUTOCOMPLETE=OFF readonly=readonly value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNumeroCadastro()%>"/>
+							<input type="text" id="n_cadastro" name="n_cadastro" readonly=readonly value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNumeroCadastro()%>"/>
 							<script type="text/javascript">
 									(function($) {
 										$('#n_selo').change(function() {
@@ -273,21 +267,21 @@ var optionCombo3 = "";
 						</p>
 							<p>
 							<label for="projeto">Projeto</label>
-							<input type="text"	id="projeto" name="projeto" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getProjeto() %>" />
+							<input type="text"	id="projeto" name="projeto" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getProjeto() %>" />
 							</p>
 							
 							<p>
 								<label for="nome_1_responsavel">Nome do 1º Responsável</label> <input
 									type="text" id="nome_1_responsavel" name="nome_1_responsavel"
-									AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomePrimResponsavel()%>"/>
+									value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomePrimResponsavel()%>"/>
 							</p>
 							<p>
 								<label for="cpf">CPF</label> <input type="text" id="cpf"
-									name="cpf" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpf()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
+									name="cpf" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpf()%>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
 							</p>
 							<p>
 								<label for="rg" class="smallLabel">RG</label> <input type="text" id="rg" name="rg"
-									AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRg()%>" />
+									class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRg()%>" />
 														
 								<label for="uf" class="smallLabel">UF</label> 
 								<select id="uf" name="uf" class="smallLabel">
@@ -322,11 +316,11 @@ var optionCombo3 = "";
 							<p>
 								<label for="n_inscricao_social">Número da Inscrição
 									Social</label> <input type="text" id="n_inscricao_social"
-									name="n_inscricao_social" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getnIs()%>" />
+									name="n_inscricao_social" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getnIs()%>" />
 							</p>
 							<p>
 								<label for="telefone">Telefone</label> <input
-									type="text" id="telefone" name="telefone" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTelefone()%>"/>
+									type="text" id="telefone" name="telefone" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTelefone()%>"/>
 							</p>
 							
 							
@@ -335,15 +329,15 @@ var optionCombo3 = "";
 						<p>
 								<label for="nome_2_responsavel">Nome do 2º Responsável</label> <input
 									type="text" id="nome_2_responsavel" name="nome_2_responsavel"
-									AUTOCOMPLETE=OFF  value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeSegResponsavel()%>"/>
+									 value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getNomeSegResponsavel()%>"/>
 							</p>
 							<p>
 								<label for="cpf2">CPF</label> 
-								<input type="text" id="cpf2" name="cpf2" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpfSeg() %>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
+								<input type="text" id="cpf2" name="cpf2" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getCpfSeg() %>" <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> />
 							</p>
 							<p>
 								<label for="rg2" class="smallLabel">RG</label> 
-								<input type="text" id="rg2"	name="rg2" AUTOCOMPLETE=OFF class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRgSeg() %>" />
+								<input type="text" id="rg2"	name="rg2" class="smallLabel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getRgSeg() %>" />
 							
 								<label for="uf2" class="smallLabel">UF</label>
 								 <select id="uf2" name="uf2" class="smallLabel">
@@ -363,21 +357,21 @@ var optionCombo3 = "";
 							
 							<p>
 								<label for="endereco">Endereço</label> <input type="text"
-									id="endereco" name="endereco" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getEndereco()%>" />
+									id="endereco" name="endereco" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getEndereco()%>" />
 							</p>
 							<p>
 								<label for="tempo_imovel">Tempo de Moradia no Imóvel</label> <input
 									type="text" id="tempo_imovel" style="width: 250px"
-									name="tempo_imovel" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMoradia()%>" /> Anos
+									name="tempo_imovel" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMoradia()%>" /> Anos
 							</p>
 							<p>
 								<label for="tempo_area">Tempo de Moradia na Área</label> <input
 									type="text" id="tempo_area" style="width: 250px"
-									name="tempo_area" AUTOCOMPLETE=OFF value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoArea()%>" /> Anos
+									name="tempo_area" value="<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoArea()%>" /> Anos
 							</p>
 							<p>
 								<label for="tempo_municipio">Tempo de Moradia na Município</label>
-								 <input type="text" id="tempo_municipio" style="width: 250px" name="tempo_municipio" AUTOCOMPLETE=OFF  value = "<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMunicipio()%>"/>Anos
+								 <input type="text" id="tempo_municipio" style="width: 250px" name="tempo_municipio"  value = "<%=((CadastroProjetoBean)request.getAttribute("projeto")).getTempoMunicipio()%>"/>Anos
 							</p>
 							</div>
 							<legend>Histórico</legend>
@@ -399,7 +393,7 @@ var optionCombo3 = "";
 								</script>
 							</p>
 						
-						<input type="hidden" AUTOCOMPLETE=OFF />
+						<input type="hidden" />
 					</fieldset>
 					
 					<fieldset class="step">
