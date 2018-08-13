@@ -16,8 +16,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 <head>
 <title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -35,11 +35,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 <div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU�RIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -64,7 +64,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 						</ul>
 					</li>
-					<li><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -131,7 +131,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<h1>SIHISB - Consulta de Assentamentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul�rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 		</div>
 		
 			<%if(request.getAttribute("mensagem") != null){%>
@@ -156,9 +156,9 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				<legend>Resultado</legend>
 				<table border="0">
 					<tr>
-						<th><img src="images/arrow_more.png" /> <b>C�digo</b></th>
+						<th><img src="images/arrow_more.png" /> <b>Código</b></th>
 						<th><img src="images/arrow_more.png" /> <b>Nome do Emprendimento</b></th>
-						<th width="60"><img src="images/arrow_more.png" /> <b>A��o</b></th>
+						<th width="60"><img src="images/arrow_more.png" /> <b>Ação</b></th>
 					</tr>
 					<%
 						if(request.getAttribute("empreendimentoList") != null){
@@ -206,7 +206,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			
 		</div></div>
 		<div id="rodape">
-			Copyright � 2012 - SECRETARIA DE HABITA��O DE S�O BERNARDO DO CAMPO
+			Copyright ₢ 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
