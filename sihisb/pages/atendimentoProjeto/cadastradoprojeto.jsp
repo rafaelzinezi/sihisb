@@ -21,8 +21,8 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 %>  
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -63,11 +63,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-			<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+			<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 				<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU�RIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -92,7 +92,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -155,7 +155,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	</div>
 		
 		<div id="content">
-			<h1>SIHISB - Cadastro de Fam�lia</h1>
+			<h1>SIHISB - Cadastro de Família</h1>
 			
 			<%if(request.getAttribute("mensagem") != null){%>
 			<div id="secess">

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>      
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -35,8 +35,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -79,11 +79,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU�RIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -108,7 +108,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 						</ul>
 					</li>
-					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -177,7 +177,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<h1>SIHISB - Cadastro de Empreendimentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul�rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 		</div>
 	<div id="wrapper">
 				<div id="steps">
@@ -212,7 +212,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						</div>
 						<div class="colunas">
 							<p>
-								<label for="n_contrato" style="width: 200px">N� do Contrato</label> 
+								<label for="n_contrato" style="width: 200px">Nº do Contrato</label> 
 								<input type="text" id="n_contrato" name="n_contrato" tabindex="05" style="width: 170px" value="<%=((EmpBean)request.getAttribute("Empreend")).getNum_contrato()%>"/>
 							</p>
 							<p>
@@ -222,7 +222,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						</div>
 						<div>							
 							<p class="width100">
-								<label for="desc_empreendimento" class="bigLabel">Descri��o do Empreendimento</label> 
+								<label for="desc_empreendimento" class="bigLabel">Descrição do Empreendimento</label> 
 								<textarea id="desc_empreendimento" name="desc_empreendimento" class="specialTextArea"><%=((EmpBean)request.getAttribute("Empreend")).getDes_empreendimento()%></textarea>
 								<script type="text/javascript">
 								(function($) {
@@ -233,7 +233,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</script>
 							</p>
 							<p class="width100">
-								<label for="desc_tipologia" class="bigLabel">Tipologia da Produ��o Habitacional</label> 
+								<label for="desc_tipologia" class="bigLabel">Tipologia da Produção Habitacional</label> 
 								<textarea id="desc_tipologia" name="desc_tipologia" class="specialTextArea"><%=((EmpBean)request.getAttribute("Empreend")).getDes_tipologia()%></textarea>
 							</p>
 						</div>
@@ -241,7 +241,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						<legend class="legend1">Contrata��o de Recursos com Agente Financeiro</legend>
 						<div>
 							<p class="width100">
-								<label for="contratacao_recursos" style="width: 170px">Est�gio de Contrata��o</label> 
+								<label for="contratacao_recursos" style="width: 170px">Estágio de Contratação</label> 
 								<select id="contratacao_recursos" name="contratacao_recursos" onchange="mostraSelect(this, '200')">
 									<%
 											if(request.getAttribute("allEstagRec") != null){
@@ -258,14 +258,14 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<span id="span_200" style="display: none">
 									<p class="width100">
-										<label for="contratacao_recursos_obs" style="width: 170px">Observa��o Contrata��o de Recursos</label> 
+										<label for="contratacao_recursos_obs" style="width: 170px">Observação Contratação de Recursos</label> 
 										<textarea style="width: 410px; height:100px" name="contratacao_recursos_obs" id="contratacao_recursos_obs"><%=((ContratacaoRecursosBean)request.getAttribute("recursos")).getDes_obs_estagio_cont_rec()%></textarea>
 									</p>
 							</span>
 							<p class="width100">
 								<label for="protocolo_consulta">Protocolo Carta Consulta</label> 
 								<input type="text" id="protocolo_consulta" name="protocolo_consulta" value="<%=((ContratacaoRecursosBean)request.getAttribute("recursos")).getNum_protocolo_carta_consulta()%>" />
-								<label for="n_do_contrato">N� do Contrato de Recursos</label> 
+								<label for="n_do_contrato">Nº do Contrato de Recursos</label> 
 								<input type="text" id="n_do_contrato" name="n_do_contrato" value="<%=((ContratacaoRecursosBean)request.getAttribute("recursos")).getNum_contrato_recurso()%>"  />
 							</p>
 						</div>
@@ -343,11 +343,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								<input type="text" id="fonte_contrapartida_04_aditivo_REC" name="fonte_contrapartida_04_aditivo_REC" style="width: 270px" value="<%=((ContratacaoRecursosBean)request.getAttribute("recursos")).getDes_contrapartida_adt_4()%>"/>
 							</p>
 						</div>
-						<legend>Est�gio de Contrata��o de Obras e Servi�os</legend>
-						<legend class="legend1">Contrata��o de Obras</legend>
+						<legend>Estágio de Contratação de Obras e Serviços</legend>
+						<legend class="legend1">Contratação de Obras</legend>
 						<div>
 							<p class="width100">
-								<label for="contratacao_Obras" style="width: 170px">Est�gio de Contrata��o</label> 
+								<label for="contratacao_Obras" style="width: 170px">Estágio de Contratação</label> 
 								<select id="contratacao_Obras" name="contratacao_Obras" onchange="mostraSelect(this, '300')">
 									<%
 											if(request.getAttribute("allEstagObra") != null){
@@ -364,7 +364,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<span id="span_300" style="display: none">
 									<p class="width100">
-										<label for="contratacao_obras_obs" style="width: 170px">Observa��o Contrata��o de Obras</label> 
+										<label for="contratacao_obras_obs" style="width: 170px">Observação Contrata��o de Obras</label> 
 										<textarea style="width: 410px; height:100px" name="contratacao_obras_obs" id="contratacao_obras_obs"><%=((ContratacaoObraBean)request.getAttribute("obra")).getDes_obs_estagio_contrat_obra()%></textarea>
 									</p>
 							</span>
@@ -377,13 +377,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							
 							<p class="width100">
-								<label for="processo_adm_obra" style="width: 170px">N� do Processo Administrativo</label> 
+								<label for="processo_adm_obra" style="width: 170px">Nº do Processo Administrativo</label> 
 								<input type="text" id="processo_adm_obra" name="processo_adm_obra" value="<%=((ContratacaoObraBean)request.getAttribute("obra")).getNum_processo_adm()%>"/>
-								<label for="licitacao_obra" style="width: 120px">N� do Processo Licita��o</label> 
+								<label for="licitacao_obra" style="width: 120px">Nº do Processo Licitação</label> 
 								<input type="text" id="licitacao_obra" name="licitacao_obra" value="<%=((ContratacaoObraBean)request.getAttribute("obra")).getNum_processo_licitacao()%>"/>
 							</p>
 							<p class="width100">
-								<label for="contrato_obra" style="width: 170px">N� do Contrato</label> 
+								<label for="contrato_obra" style="width: 170px">Nº do Contrato</label> 
 								<input type="text" id="contrato_obra" name="contrato_obra" value="<%=((ContratacaoObraBean)request.getAttribute("obra")).getNum_contrato()%>" />
 							</p>
 							
@@ -462,10 +462,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 						</div>
 						
-						<legend class="legend1">Contrata��o de Trabalho Social</legend>
+						<legend class="legend1">Contratação de Trabalho Social</legend>
 						<div>
 							<p class="width100">
-								<label for="contratacao_trabSocial" style="width: 170px">Est�gio de Contrata��o</label> 
+								<label for="contratacao_trabSocial" style="width: 170px">Estágio de Contratação</label> 
 								<select id="contratacao_trabSocial" name="contratacao_trabSocial" onchange="mostraSelect(this, '400')">
 								<%
 											if(request.getAttribute("allEstagTrab") != null){
@@ -482,7 +482,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<span id="span_400" style="display: none">
 									<p class="width100">
-										<label for="contratacao_trabSocial_obs" style="width: 170px">Observa��o Contrata��o de Obras</label> 
+										<label for="contratacao_trabSocial_obs" style="width: 170px">Observação Contratação de Obras</label> 
 										<textarea style="width: 410px; height:100px" name="contratacao_trabSocial_obs" id="contratacao_trabSocial_obs"><%=((ContratacaoTrabSocial)request.getAttribute("trabsocial")).getDes_obs_estagio_cont_trab_soc()%></textarea>
 									</p>
 							</span>
@@ -494,13 +494,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								<input type="text" id="assinada_trab_social" name="assinada_trab_social" value="<%=((ContratacaoTrabSocial)request.getAttribute("trabsocial")).getDat_ois_assinada_em()%>" />
 							</p>
 							<p class="width100">
-								<label for="processo_adm_trabobra" style="width: 170px">N� do Processo Administrativo</label> 
+								<label for="processo_adm_trabobra" style="width: 170px">Nº do Processo Administrativo</label> 
 								<input type="text" id="processo_adm_trabobra" name="processo_adm_trabobra" value="<%=((ContratacaoTrabSocial)request.getAttribute("trabsocial")).getNum_processo_adm()%>"/>
-								<label for="licitacao_trabobra" style="width: 120px">N� do Processo Licita��o</label> 
+								<label for="licitacao_trabobra" style="width: 120px">Nº do Processo Licitação</label> 
 								<input type="text" id="licitacao_trabobra" name="licitacao_trabobra"  value="<%=((ContratacaoTrabSocial)request.getAttribute("trabsocial")).getNum_processo_licitacao()%>"/>
 							</p>
 							<p class="width100">
-								<label for="contrato_trabobra" style="width: 170px">N� do Contrato</label> 
+								<label for="contrato_trabobra" style="width: 170px">Nº do Contrato</label> 
 								<input type="text" id="contrato_trabobra" name="contrato_trabobra" value="<%=((ContratacaoTrabSocial)request.getAttribute("trabsocial")).getNum_contrato()%>"/>
 							</p>
 						</div>
@@ -578,10 +578,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						</div>
 						
 						
-						<legend class="legend1">Contrata��o de Regulariza��o Fundi�ria</legend>
+						<legend class="legend1">Contratação de Regularização Fundiária</legend>
 						<div>
 							<p class="width100">
-								<label for="contratacao_reg_fund" style="width: 170px">Est�gio de Contrata��o</label> 
+								<label for="contratacao_reg_fund" style="width: 170px">Estágio de Contratação</label> 
 								<select id="contratacao_reg_fund" name="contratacao_reg_fund" onchange="mostraSelect(this, '500')">
 									<%
 											if(request.getAttribute("allEstagConReg") != null){
@@ -598,7 +598,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<span id="span_500" style="display: none">
 									<p class="width100">
-										<label for="contratacao_reg_fund_obs" style="width: 170px">Observa��o Contrata��o de Obras</label> 
+										<label for="contratacao_reg_fund_obs" style="width: 170px">Observação Contratação de Obras</label> 
 										<textarea style="width: 410px; height:100px" name="contratacao_reg_fund_obs" id="contratacao_reg_fund_obs"><%=((ContratacaoRegFunBean)request.getAttribute("regfundiaria")).getDes_obs_estagio_cont_reg_fund()%></textarea>
 									</p>
 							</span>
@@ -610,13 +610,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								<input type="text" id="assinada_reg_fund" name="assinada_reg_fund" value="<%=((ContratacaoRegFunBean)request.getAttribute("regfundiaria")).getDat_ois_assinada_em()%>"/>
 							</p>
 							<p class="width100">
-								<label for="processo_adm_reg_fund" style="width: 170px">N� do Processo Administrativo</label> 
+								<label for="processo_adm_reg_fund" style="width: 170px">Nº do Processo Administrativo</label> 
 								<input type="text" id="processo_adm_reg_fund" name="processo_adm_reg_fund" value="<%=((ContratacaoRegFunBean)request.getAttribute("regfundiaria")).getNum_processo_adm()%>"/>
-								<label for="licitacao_reg_fund" style="width: 120px">N� do Processo Licita��o</label> 
+								<label for="licitacao_reg_fund" style="width: 120px">Nº do Processo Licitação</label> 
 								<input type="text" id="licitacao_reg_fund" name="licitacao_reg_fund" value="<%=((ContratacaoRegFunBean)request.getAttribute("regfundiaria")).getNum_processo_licitacao()%>"/>
 							</p>
 							<p class="width100">
-								<label for="contrato_reg_fund" style="width: 170px">N� do Contrato</label> 
+								<label for="contrato_reg_fund" style="width: 170px">Nº do Contrato</label> 
 								<input type="text" id="contrato_reg_fund" name="contrato_reg_fund" value="<%=((ContratacaoRegFunBean)request.getAttribute("regfundiaria")).getNum_contrato()%>"/>
 							</p>
 						</div>
@@ -693,7 +693,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 						</div>
 						
-						<legend>Elabora��o de Projetos e Aprova��es</legend>
+						<legend>Elaboração de Projetos e Aprovações</legend>
 						<div>
 							<p class="width100">
 								<label for="projetos" style="width:170px">Projetos</label> 
@@ -711,7 +711,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_100" style="display: none">
-									<label for="projetos_obs">Observa��o</label> 
+									<label for="projetos_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="projetos_obs" id="projetos_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_etapa_projeto()%></textarea>
 								</span>
 							</p>
@@ -731,7 +731,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_101" style="display: none">
-									<label for="licenciamento_obs">Observa��o</label> 
+									<label for="licenciamento_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="licenciamento_obs" id="licenciamento_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_etapa_licenciamento_aprov()%></textarea>
 								</span>
 							</p>
@@ -751,7 +751,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_102" style="display: none">
-									<label for="cazeis_obs">Observa��o</label> 
+									<label for="cazeis_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="cazeis_obs" id="cazeis_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_cazeis()%></textarea>
 								</span>
 							</p>
@@ -771,7 +771,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_103" style="display: none">
-									<label for="cehais_obs">Observa��o</label> 
+									<label for="cehais_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="cehais_obs" id="cehais_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_cehais()%></textarea>
 								</span>
 							</p>
@@ -791,7 +791,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_104" style="display: none">
-									<label for="graprohab_obs">Observa��o</label> 
+									<label for="graprohab_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="graprohab_obs" id="graprohab_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_graproha()%></textarea>
 								</span>
 							</p>
@@ -811,12 +811,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_105" style="display: none">
-									<label for="cidade_obs">Observa��o</label> 
+									<label for="cidade_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="cidade_obs" id="cidade_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_cid_legal()%></textarea>
 								</span>
 							</p>
 							<p class="width100">
-								<label for="agua_esgoto" style="width:170px">�gua e Esgoto</label> 
+								<label for="agua_esgoto" style="width:170px">Água e Esgoto</label> 
 								<select id="agua_esgoto" name="agua_esgoto" onchange="mostraSelect(this, '106')" style="width: 200px">
 									<%
 											if(request.getAttribute("aguaEsgoto") != null){
@@ -831,12 +831,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_106" style="display: none">
-									<label for="agua_obs">Observa��o</label> 
+									<label for="agua_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="agua_obs" id="agua_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_agua_esgo()%></textarea>
 								</span>
 							</p>
 							<p class="width100">
-								<label for="gas" style="width:170px">G�s</label> 
+								<label for="gas" style="width:170px">Gás</label> 
 								<select id="gas" name="gas" onchange="mostraSelect(this, '107')" style="width: 200px">
 									<%
 											if(request.getAttribute("gas") != null){
@@ -851,7 +851,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_107" style="display: none">
-									<label for="gas_obs">Observa��o</label> 
+									<label for="gas_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="gas_obs" id="gas_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_gas()%></textarea>
 								</span>
 							</p>
@@ -871,12 +871,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_108" style="display: none">
-									<label for="energia_obs">Observa��o</label> 
+									<label for="energia_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="energia_obs" id="energia_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_energ_ele()%></textarea>
 								</span>
 							</p>
 							<p class="width100">
-								<label for="telecomunicacao" style="width:170px">Telecomunica��es</label> 
+								<label for="telecomunicacao" style="width:170px">Telecomunicações</label> 
 								<select id="telecomunicacao" name="telecomunicacao" onchange="mostraSelect(this, '109')" style="width: 200px">
 									<%
 											if(request.getAttribute("telecom") != null){
@@ -891,7 +891,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_109" style="display: none">
-									<label for="telecomunicacao_obs">Observa��o</label> 
+									<label for="telecomunicacao_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="telecomunicacao_obs" id="telecomunicacao_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_telecom()%></textarea>
 								</span>
 							</p>
@@ -911,7 +911,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_110" style="display: none">
-									<label for="bombeiros_obs">Observa��o</label> 
+									<label for="bombeiros_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="bombeiros_obs" id="bombeiros_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_bombeiros()%></textarea>
 								</span>
 							</p>
@@ -931,7 +931,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_111" style="display: none">
-									<label for="der_obs">Observa��o</label> 
+									<label for="der_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="der_obs" id="der_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_der()%></textarea>
 								</span>
 							</p>
@@ -951,12 +951,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_112" style="display: none">
-									<label for="transpetro_obs">Observa��o</label> 
+									<label for="transpetro_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="transpetro_obs" id="transpetro_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_estag_aprov_transpetr()%></textarea>
 								</span>
 							</p>
 						</div>
-						<legend>Andamento das A��es</legend>
+						<legend>Andamento das Ações</legend>
 						<script>
 						function mostraSelect(atual, nomeSelect)
 						{
@@ -991,7 +991,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_02" style="display: none">
-									<label for="social_obs">Observa��o</label> 
+									<label for="social_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="social_obs" id="social_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_andamento_social()%></textarea>
 								</span>
 							</p>
@@ -1012,13 +1012,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_10" style="display: none">
-									<label for="social_contrada_obs">Observa��o</label> 
+									<label for="social_contrada_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="social_contrada_obs" id="social_contrada_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_andamento_social_contr()%></textarea>
 								</span>
 							</p>
 							
 							<p class="width100">
-								<label for="recuperacao_ambiental" style="width:170px">Recupera��o Ambiental/Compensa��o</label> 
+								<label for="recuperacao_ambiental" style="width:170px">Recuperação Ambiental/Compensação</label> 
 								<select id="recuperacao_ambiental" name="recuperacao_ambiental" onchange="mostraSelect(this, '11')" style="width: 200px">
 									<%
 											if(request.getAttribute("arecamb") != null){
@@ -1033,13 +1033,13 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_11" style="display: none">
-									<label for="recuperacao_ambiental_obs">Observa��o</label> 
+									<label for="recuperacao_ambiental_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="recuperacao_ambiental_obs" id="recuperacao_ambiental_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_andamento_rec_amb()%></textarea>
 								</span>
 							</p>
 							
 							<p class="width100">
-								<label for="juridica_fundiaria" style="width:170px">Jur�dica-Fundi�ria</label> 
+								<label for="juridica_fundiaria" style="width:170px">Jurídica-Fundiária</label> 
 								<select id="juridica_fundiaria" name="juridica_fundiaria" onchange="mostraSelect(this, '03')" style="width: 200px">
 									<%
 											if(request.getAttribute("aJuridico") != null){
@@ -1054,7 +1054,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_03" style="display: none">
-									<label for="juridica_fundiaria_obs">Observa��o</label> 
+									<label for="juridica_fundiaria_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="juridica_fundiaria_obs" id="juridica_fundiaria_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_andamento_juridico_fun()%> </textarea>
 								</span>
 							</p>
@@ -1074,12 +1074,12 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 										<%}}%>
 								</select>
 								<span id="span_07" style="display: none">
-									<label for="obras_obs">Observa��o</label> 
+									<label for="obras_obs">Observação</label> 
 									<textarea style="width: 410px; height:100px" name="obras_obs" id="obras_obs"><%=((EmpBean)request.getAttribute("Empreend")).getDes_obs_andamento_obra()%></textarea>
 								</span>
 							</p>
 						</div>
-						<legend>Execu��o F�sico-Financeira</legend>
+						<legend>Execução Físico-Financeira</legend>
 						<div>
 							<p class="width100">
 							
@@ -1138,7 +1138,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							<br /><br />
 							<div style="width: 1000px; text-align:center; ">
 								<%if(request.getAttribute("update") != null){%>
-								<h2>Confirmar altera��o de Empreendimento?</h2>
+								<h2>Confirmar alteração de Empreendimento?</h2>
 								<%}else{%>
 								<h2>Confirmar cadastro de Empreendimento?</h2>
 								<%}%>
@@ -1169,11 +1169,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		</div>
 		
 		<div id="rodape">
-			Copyright � 2012 - SECRETARIA DE HABITA��O DE S�O BERNARDO DO CAMPO
-			<br/>
-			Pra�a Samuel Sabatini, 50 - CEP 09750-001
-			<br/>
-			PABX 4348-1000 - 1043
+			Copyright � 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 		</div>
 		
 	</div>
@@ -1248,7 +1244,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	{	
 		$(".E4").show();
 		
-	}
+	};
 	</script>
 </body>
 

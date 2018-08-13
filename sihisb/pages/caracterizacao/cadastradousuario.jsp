@@ -21,7 +21,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 %>  
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
@@ -89,7 +89,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-					<li><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>

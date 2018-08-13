@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="ISO-8859-1" %>
+    pageEncoding="utf-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%@page import="br.gov.sp.saobernardo.sehab.bean.VulnerabilidadeBean"%>
@@ -22,13 +22,13 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 %>  
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -64,11 +64,11 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 		<div id="top-site">
 			<div id="logo"></div>
 			<div id="logo_sihisb"></div>
-			<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+			<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 			<div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU�RIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -93,7 +93,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -253,7 +253,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 	{	
 		$(".E4").show();
 		
-	}
+	};
 	</script>
 
 </body>
