@@ -293,7 +293,7 @@ h2{clear: both; padding-top: 15px}
 #posts p{margin: 5px 5px 10px 5px}
 #posts a{text-decoration:none}
 #posts a:hover{font-weight: bold;text-decoration: underline;}
-#rodape{font-size: 12px; clear: both; padding: 30px 20px 30px 20px; border-top: solid 1px #CCC; text-align:center; }
+#rodape{font-size: 12px; clear: both; width:500px; padding: 30px 20px 30px 20px; border-top: solid 1px #CCC; text-align:center; }
 .align-left{float:left; margin-right: 10px}
 .align-right{float:right; margin-left: 10px}
 .titulo{clear: both; font-size: 26px; color:#333; padding: 0 5px 15px 0;text-decoration: none}
