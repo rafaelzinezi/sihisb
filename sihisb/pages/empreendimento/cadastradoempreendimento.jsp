@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -127,12 +127,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 					</ul>
 
 				</li> 
-					<li class="BCDE BCD CDE CD DE D3"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS�O<br/>USO</a>
-					
-				</li>
+
 				<li>
 
 					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">

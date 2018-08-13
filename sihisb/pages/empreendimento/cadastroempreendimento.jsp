@@ -142,13 +142,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li class="BCDE BCD CDE CD DE D3"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS�O<br/>USO</a>
-					
-				</li>
+
 				<li>
 
 					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">

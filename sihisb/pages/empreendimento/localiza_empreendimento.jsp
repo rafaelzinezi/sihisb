@@ -98,13 +98,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS�O<br/>USO</a>
-					
-				</li>
+
 				<li>
 
 					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">

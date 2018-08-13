@@ -107,13 +107,6 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-
-					<li class="D"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a></li>
-					
-				
-				<li class="E"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
-					
-				</li>
 				
 						 <li class="F"><a href="#">EMPREENDIMENTOS</a>
 
