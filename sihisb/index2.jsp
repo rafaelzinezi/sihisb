@@ -31,78 +31,28 @@
 		
 
 		<div id="menu">
-			<ul id="lista-menu">
-				<li><a href="index.html">HOME</a></li>
-				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
-<li>
-
-					<a href="faq.jsp">DÚVIDAS FREQUENTES</a>
-
-				</li>
-
-				
-			
-			<li class="dropMenuDown"><a href="#"><img src="images/intranet.png" class="align-left"/></a>
-					<ul class="homeLogin">
-						<li>
-							<div>
-							<form method="post" action="validaLogin.do">
-								<label>Matricula:</label>
-								<input type="text" class="cxInput" name="nome"/>
-								
-								<label>Senha:</label>
-								<input type="password" class="cxInput" name="senha"/>
-								<br/><br/>
-								<input type="submit" value="ACESSAR"  class="btOk"/>
-								<a href="recuperarSenha.jsp" class="linkComun">Esqueceu a senha?</a>
-							</form>
-							</div>
-						</li>
-					</ul>
-				</li>
-				
-
-			</ul>
 		</div>
 		<div style="clear: both;"></div>
 	</div>
 	
 	
-	<div id="content">
+	<div id="login">
 	<%if(request.getAttribute("mensagem") != null){%>
 			<div id="secess">
 				<%=request.getAttribute("mensagem") %>
 			</div>
 			<%}%>
-
-		
-
-		<h1>SIHISB - SÃO BERNARDO DO CAMPO</h1>
-
-		<div id="wrapper">
-			
-
-		</div>
+			<form method="post" action="validaLogin.do">
+				<label>Matricula:</label>
+				<input type="text" class="cxInput" name="nome"/>
+				<br>
+				<label>Senha:</label>
+				<input type="password" class="cxInput" name="senha"/>
+				<br><br>
+				<input type="submit" value="ACESSAR"  class="btOk"/>
+				<a href="recuperarSenha.jsp" class="linkComun">Esqueceu a senha?</a>
+			</form>
 
 		<div id="rodape">
 			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
