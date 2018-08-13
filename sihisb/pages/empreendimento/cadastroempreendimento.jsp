@@ -40,8 +40,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -237,8 +237,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								<textarea id="desc_tipologia" name="desc_tipologia" class="specialTextArea"><%=((EmpBean)request.getAttribute("Empreend")).getDes_tipologia()%></textarea>
 							</p>
 						</div>
-						<legend>Est�gio de Contrata��o de Recursos</legend>
-						<legend class="legend1">Contrata��o de Recursos com Agente Financeiro</legend>
+						<legend>Est�gio de Contratação de Recursos</legend>
+						<legend class="legend1">Contratação de Recursos com Agente Financeiro</legend>
 						<div>
 							<p class="width100">
 								<label for="contratacao_recursos" style="width: 170px">Estágio de Contratação</label> 
@@ -364,7 +364,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							</p>
 							<span id="span_300" style="display: none">
 									<p class="width100">
-										<label for="contratacao_obras_obs" style="width: 170px">Observação Contrata��o de Obras</label> 
+										<label for="contratacao_obras_obs" style="width: 170px">Observação Contratação de Obras</label> 
 										<textarea style="width: 410px; height:100px" name="contratacao_obras_obs" id="contratacao_obras_obs"><%=((ContratacaoObraBean)request.getAttribute("obra")).getDes_obs_estagio_contrat_obra()%></textarea>
 									</p>
 							</span>
@@ -1169,7 +1169,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		</div>
 		
 		<div id="rodape">
-			Copyright � 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
+			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 		</div>
 		
 	</div>

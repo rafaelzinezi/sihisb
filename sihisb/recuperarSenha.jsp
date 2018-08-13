@@ -8,14 +8,14 @@
 
 <head>
 
-	<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 
 
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -129,7 +129,7 @@
 
 		<div id="erros" style="display: none;">
 
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul�rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 
 		</div>
 
@@ -211,7 +211,7 @@
 
 		<div id="rodape">
 
-		Copyright � 2012 - SECRETARIA DE HABITA��O DE S�O BERNARDO DO CAMPO
+		Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE S�O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

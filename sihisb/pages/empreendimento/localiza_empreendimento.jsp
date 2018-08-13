@@ -14,7 +14,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
 <meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />

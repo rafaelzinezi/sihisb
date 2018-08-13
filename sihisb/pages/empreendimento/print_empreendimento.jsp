@@ -39,8 +39,8 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 <head>
 <title>Prefeitura Minicipal de S�o Bernardo do Campo - Sihisb</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -105,18 +105,18 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Est�gio de Contrata��o de Recursos</h1>
+					<h1>Est�gio de Contratação de Recursos</h1>
 				</td>
 			</tr>
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contrata��o de Recursos com Agente Financeiro</h2>
+					<h2>Contratação de Recursos com Agente Financeiro</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contrata��o<label></td>
+				<td width="150"><label>Est�gio de Contratação<label></td>
 				<td colspan="4">${imprimeRecursos.cod_estagio_contrat_rec}</td>
 			</tr>
 			
@@ -220,17 +220,17 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Est�gio de Contrata��o de Obras e Servi�os</h1>
+					<h1>Est�gio de Contratação de Obras e Servi�os</h1>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="6">
-					<h2>Contrata��o de Obras</h2>
+					<h2>Contratação de Obras</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contrata��o<label></td>
+				<td width="150"><label>Est�gio de Contratação<label></td>
 				<td colspan="5">${imprimeObras.cod_estagio_contrat_obra}</td>
 			</tr>
 			
@@ -344,12 +344,12 @@ function imprimir()
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contrata��o de Trabalho Social</h2>
+					<h2>Contratação de Trabalho Social</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contrata��o<label></td>
+				<td width="150"><label>Est�gio de Contratação<label></td>
 				<td colspan="5">${imprimeTrabSocial.cod_estagio_contrat_trab_soc}</td>
 			</tr>
 			
@@ -464,12 +464,12 @@ function imprimir()
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contrata��o de Regulariza��o Fundi�ria</h2>
+					<h2>Contratação de Regulariza��o Fundi�ria</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contrata��o<label></td>
+				<td width="150"><label>Est�gio de Contratação<label></td>
 				<td colspan="5">${imprimeRegFun.cod_estagio_contrat_reg_fund}</td>
 			</tr>
 			
