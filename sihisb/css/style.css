@@ -281,8 +281,7 @@ span.error{
 #header{/*border-top: solid 7px #e2001a8*/ background-image: url('../images/pattern_sbc.png'); height: 20px; padding: 5px 0 0 0; text-align: center;}
 #header div{color: #FFF;font-size: 13px;}
 #header div a{font-size: 13px;color: #FFF}
-#top-site{width: 1000px; margin:10px auto;position:relative;border-bottom: solid 1px #999} 
-/*; height: 200px}*/
+#top-site{width: 1000px; margin:10px auto;position:relative;border-bottom: solid 1px #999; height: 250px}
 #logo{background-image: url("../images/logo_2012_b.png"); background-repeat: no-repeat; width: 188px; height: 128px; float:right}
 #logo_sihisb{background-image: url("../images/logo_sihisb.png"); background-repeat: no-repeat; background-position: center; width: 358px; height: 150px; float:left; }
 #menu{position: absolute; bottom:0; right:0; font-size: 15px; font-weight: bold;z-index:10000; text-shadow: 1px 2px #e7e6e6}

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <%@page import="br.gov.sp.saobernardo.sehab.empbean.AndamentoSocialContrBean"%>
@@ -37,10 +37,10 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura Minicipal de São Bernardo do Campo - Sihisb</title>
+<title>Prefeitura Minicipal de Sï¿½o Bernardo do Campo - Sihisb</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -57,7 +57,7 @@ function imprimir()
 
 <body onfocus="document.getElementById('printar').style.visibility='visible';">
 	<div id="top">
-		<img src="images/logo_2012.jpg" title="São Bernardo do Campo"/>
+		<img src="images/logo_2012.jpg" title="Sï¿½o Bernardo do Campo"/>
 		<td><h1><%=((EmpImpressaoBean)request.getAttribute("imprime")).getNom_empreendimento() %></h1></td>
 	</div>
 	
@@ -65,15 +65,15 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Identificação do Empreendimento</h1>
+					<h1>Identificaï¿½ï¿½o do Empreendimento</h1>
 				</td>
 			</tr>
 			<tr>
 				<td width="150"><label>Nome do Empreendimento<label></td>
 				<td><%=((EmpImpressaoBean)request.getAttribute("imprime")).getNom_empreendimento() %></td>
 			
-				<td width="150"><label>Famílias Beneficiadas<label></td>
-				<td colspan="3">${imprime.qtd_familias_atendidas}</td>
+				<td width="150"><label>Famï¿½lias Beneficiadas<label></td>
+				<td colspan="3">${imprime.qtd_FAMÃLIAS_atendidas}</td>
 			</tr>
 			
 			<tr>
@@ -85,7 +85,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Contrato<label></td>
+				<td width="150"><label>Nï¿½ do Contrato<label></td>
 				<td>${imprime.num_contrato}</td>
 			
 				<td width="150"><label>Fonte de Recursos<label></td>
@@ -93,11 +93,11 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Descrição do Empreendimento<label></td>
+				<td width="150"><label>Descriï¿½ï¿½o do Empreendimento<label></td>
 				<td colspan="5">${imprime.des_empreendimento}</td>
 			</tr>
 			<tr>
-				<td width="150"><label>Tipologia da Produção Habitacional<label></td>
+				<td width="150"><label>Tipologia da Produï¿½ï¿½o Habitacional<label></td>
 				<td colspan="5">${imprime.des_tipologia}</td>
 			</tr>
 					</table>
@@ -105,23 +105,23 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Estágio de Contratação de Recursos</h1>
+					<h1>Estï¿½gio de ContrataÃ§Ã£o de Recursos</h1>
 				</td>
 			</tr>
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contratação de Recursos com Agente Financeiro</h2>
+					<h2>ContrataÃ§Ã£o de Recursos com Agente Financeiro</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Estágio de Contratação<label></td>
+				<td width="150"><label>Estï¿½gio de ContrataÃ§Ã£o<label></td>
 				<td colspan="4">${imprimeRecursos.cod_estagio_contrat_rec}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observações<label></td>
+				<td width="150"><label>Observaï¿½ï¿½es<label></td>
 				<td colspan="4">${imprimeRecursos.des_obs_estagio_cont_rec}</td>
 			</tr>
 			
@@ -129,7 +129,7 @@ function imprimir()
 				<td width="150"><label>Protocolo Carta Consulta<label></td>
 				<td>${imprimeRecursos.num_protocolo_carta_consulta}</td>
 			
-				<td width="150"><label>Nº do Contrato de Recursos<label></td>
+				<td width="150"><label>Nï¿½ do Contrato de Recursos<label></td>
 				<td colspan="3">${imprimeRecursos.num_contrato}</td>
 			</tr>
 		</table>
@@ -220,27 +220,27 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Estágio de Contratação de Obras e Serviços</h1>
+					<h1>Estï¿½gio de ContrataÃ§Ã£o de Obras e Serviï¿½os</h1>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="6">
-					<h2>Contratação de Obras</h2>
+					<h2>ContrataÃ§Ã£o de Obras</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Estágio de Contratação<label></td>
+				<td width="150"><label>Estï¿½gio de ContrataÃ§Ã£o<label></td>
 				<td colspan="5">${imprimeObras.cod_estagio_contrat_obra}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observações<label></td>
+				<td width="150"><label>Observaï¿½ï¿½es<label></td>
 				<td colspan="5">${imprimeObras.des_obs_estagio_contrat_obra}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previsão<label></td>
+				<td width="150"><label>OIS Previsï¿½o<label></td>
 				<td colspan="2">${imprimeObras.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -248,15 +248,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Processo Administrativo<label></td>
+				<td width="150"><label>Nï¿½ do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeObras.num_processo_adm}</td>
 			
-				<td width="150"><label>Nº do Processo Licitação<label></td>
+				<td width="150"><label>Nï¿½ do Processo Licitaï¿½ï¿½o<label></td>
 				<td colspan="2">${imprimeObras.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Contrato<label></td>
+				<td width="150"><label>Nï¿½ do Contrato<label></td>
 				<td colspan="5">${imprimeObras.num_contrato}</td>
 			</tr>
 			<tr>
@@ -344,22 +344,22 @@ function imprimir()
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contratação de Trabalho Social</h2>
+					<h2>ContrataÃ§Ã£o de Trabalho Social</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Estágio de Contratação<label></td>
+				<td width="150"><label>Estï¿½gio de ContrataÃ§Ã£o<label></td>
 				<td colspan="5">${imprimeTrabSocial.cod_estagio_contrat_trab_soc}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observações<label></td>
+				<td width="150"><label>Observaï¿½ï¿½es<label></td>
 				<td colspan="5">${imprimeTrabSocial.des_obs_estagio_cont_trab_soc}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previsão<label></td>
+				<td width="150"><label>OIS Previsï¿½o<label></td>
 				<td colspan="2">${imprimeTrabSocial.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -367,15 +367,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Processo Administrativo<label></td>
+				<td width="150"><label>Nï¿½ do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeTrabSocial.num_processo_adm}</td>
 			
-				<td width="150"><label>Nº do Processo Licitação<label></td>
+				<td width="150"><label>Nï¿½ do Processo Licitaï¿½ï¿½o<label></td>
 				<td colspan="2">${imprimeTrabSocial.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Contrato<label></td>
+				<td width="150"><label>Nï¿½ do Contrato<label></td>
 				<td colspan="5">${imprimeTrabSocial.num_contrato}</td>
 			</tr>
 			<tr>
@@ -464,22 +464,22 @@ function imprimir()
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contratação de Regularização Fundiária</h2>
+					<h2>ContrataÃ§Ã£o de Regularizaï¿½ï¿½o Fundiï¿½ria</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Estágio de Contratação<label></td>
+				<td width="150"><label>Estï¿½gio de ContrataÃ§Ã£o<label></td>
 				<td colspan="5">${imprimeRegFun.cod_estagio_contrat_reg_fund}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observações<label></td>
+				<td width="150"><label>Observaï¿½ï¿½es<label></td>
 				<td colspan="5">${imprimeRegFun.des_obs_estagio_cont_reg_fund}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previsão<label></td>
+				<td width="150"><label>OIS Previsï¿½o<label></td>
 				<td colspan="2">${imprimeRegFun.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -487,15 +487,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Processo Administrativo<label></td>
+				<td width="150"><label>Nï¿½ do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeRegFun.num_processo_adm}</td>
 			
-				<td width="150"><label>Nº do Processo Licitação<label></td>
+				<td width="150"><label>Nï¿½ do Processo Licitaï¿½ï¿½o<label></td>
 				<td colspan="2">${imprimeRegFun.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Nº do Contrato<label></td>
+				<td width="150"><label>Nï¿½ do Contrato<label></td>
 				<td colspan="5">${imprimeRegFun.num_contrato}</td>
 			</tr>
 			<tr>
@@ -583,7 +583,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Elaboração de Projetos e Aprovações</h1>
+					<h1>Elaboraï¿½ï¿½o de Projetos e Aprovaï¿½ï¿½es</h1>
 				</td>
 			</tr>
 			
@@ -591,7 +591,7 @@ function imprimir()
 				<td width="150"><label>Projetos<label></td>
 				<td>${imprime.cod_estagio_aprov_proj}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_etapa_projeto}</td>
 			</tr>
 			
@@ -599,7 +599,7 @@ function imprimir()
 				<td width="150"><label>Licenciamento Ambiental<label></td>
 				<td>${imprime.cod_estag_aprov_licenc_amb}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_etapa_licenciamento_aprov}</td>
 			</tr>
 			
@@ -607,7 +607,7 @@ function imprimir()
 				<td width="150"><label>Cazeis<label></td>
 				<td>${imprime.cod_estag_aprov_cazeis}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_cazeis}</td>
 			</tr>
 			
@@ -615,7 +615,7 @@ function imprimir()
 				<td width="150"><label>Cehais<label></td>
 				<td>${imprime.cod_estag_aprov_cehais}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_cehais}</td>
 			</tr>
 			
@@ -623,7 +623,7 @@ function imprimir()
 				<td width="150"><label>Graprohab<label></td>
 				<td>${imprime.cod_estag_aprov_graproha}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_graproha}</td>
 			</tr>
 			
@@ -631,39 +631,39 @@ function imprimir()
 				<td width="150"><label>Cidade Legal<label></td>
 				<td>${imprime.cod_estag_aprov_cidade_legal}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_cid_legal}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Água e Esgoto<label></td>
+				<td width="150"><label>ï¿½gua e Esgoto<label></td>
 				<td>${imprime.cod_estag_aprov_agua_esgoto}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_agua_esgo}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Gás<label></td>
+				<td width="150"><label>Gï¿½s<label></td>
 				<td>${imprime.cod_estag_aprov_gas}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_gas}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Energia Elétrica<label></td>
+				<td width="150"><label>Energia Elï¿½trica<label></td>
 				<td>${imprime.cod_estag_aprov_energia_eletri}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_energ_ele}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Telecomunicações<label></td>
+				<td width="150"><label>Telecomunicaï¿½ï¿½es<label></td>
 				<td>${imprime.cod_estag_aprov_telecom}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_telecom}</td>
 			</tr>
 			
@@ -671,7 +671,7 @@ function imprimir()
 				<td width="150"><label>Bombeiros<label></td>
 				<td>${imprime.cod_estag_aprov_bombeiros}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_bombeiros}</td>
 			</tr>
 			
@@ -679,7 +679,7 @@ function imprimir()
 				<td width="150"><label>DER<label></td>
 				<td>${imprime.cod_estag_aprov_der}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_der}</td>
 			</tr>
 			
@@ -687,7 +687,7 @@ function imprimir()
 				<td width="150"><label>Transpetro<label></td>
 				<td>${imprime.cod_estag_aprov_transpetro}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_estag_aprov_transpetr}</td>
 			</tr>
 		</table>
@@ -695,7 +695,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Andamento das Ações</h1>
+					<h1>Andamento das Aï¿½ï¿½es</h1>
 				</td>
 			</tr>
 			
@@ -703,7 +703,7 @@ function imprimir()
 				<td width="150"><label>Social<label></td>
 				<td>${imprime.cod_andamento_social}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_andamento_social}</td>
 			</tr>
 			
@@ -711,23 +711,23 @@ function imprimir()
 				<td width="150"><label>Social Contratada<label></td>
 				<td>${imprime.cod_andamento_social_contr}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_andamento_social_contr}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Recuperação Ambiental/Compensação<label></td>
+				<td width="150"><label>Recuperaï¿½ï¿½o Ambiental/Compensaï¿½ï¿½o<label></td>
 				<td>${imprime.cod_andamento_rec_amb}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_andamento_rec_amb}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Jurídica-Fundiária<label></td>
+				<td width="150"><label>Jurï¿½dica-Fundiï¿½ria<label></td>
 				<td>${imprime.cod_andamento_juridico_fundiar}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_andamento_juridico_fun}</td>
 			</tr>
 			
@@ -735,7 +735,7 @@ function imprimir()
 				<td width="150"><label>Obras<label></td>
 				<td>${imprime.cod_andamento_obra}</td>
 			
-				<td width="150"><label>Observação<label></td>
+				<td width="150"><label>ObservaÃ§Ã£o<label></td>
 				<td colspan="3">${imprime.des_obs_andamento_obra}</td>
 			</tr>
 		</table>
@@ -743,7 +743,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Execução Físico-Financeira</h1>
+					<h1>Execuï¿½ï¿½o Fï¿½sico-Financeira</h1>
 				</td>
 			</tr>
 			

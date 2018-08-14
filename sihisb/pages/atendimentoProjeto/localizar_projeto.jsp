@@ -70,7 +70,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 						</ul>
 					</li>
-					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -104,34 +104,6 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li class="BCDE BCD CDE CD DE D3"><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li class="BCDE CDE DE E4"><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISSÃO<br/>USO</a>
-					
-				</li>
-				<li>
-
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
 
 				<li><a href="index2.jsp" style="color: #b71111">SAIR</a></li>
 			</ul>

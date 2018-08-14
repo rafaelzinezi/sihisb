@@ -7,8 +7,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Upload</title>
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÌtica Habitacional no municÌpio" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA«√O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol√≠tica Habitacional no munic√≠pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA√á√ÉO MONITORAMENTO MAPEAMENTO" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" href="css/style.css" type="text/css"	media="screen" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -24,7 +24,7 @@
 			var idtEmpreendimento = $("#idt_empreendimento", pai).val();
 
 			if(idtEmpreendimento == 0 || idtEmpreendimento== null){
-				alert("Para upload de imagem, È necessario cadastrar o empreendimento.");
+				alert("Para upload de imagem, √© necess√°rio cadastrar o empreendimento.");
 				}else{
 			$("#idt_empreendimento").val(idtEmpreendimento);
 			var carregaGaleria		= "#carregaGaleria_"+alvo;

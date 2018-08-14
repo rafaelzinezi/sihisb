@@ -21,7 +21,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 %>  
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 
 	
@@ -89,7 +89,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-					<li><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -124,27 +124,6 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 				</li> 
 
-				<li>
-
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
 
 				<li><a href="index2.jsp" style="color: #b71111">SAIR</a></li>
 			</ul>

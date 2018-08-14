@@ -8,15 +8,15 @@
 
 <head>
 
-	<title>Prefeitura de S�o Bernardo do Campo - SIHISB</title>
+	<title>Prefeitura de São Bernardo do Campo - SIHISB</title>
 
 
 
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -94,31 +94,10 @@ if(usuario == null){
 		<div id="logo"></div>
 				<div id="logo_sihisb"></div>
 		
-		<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olá<%=usuario.getLogin() %></div>
 		<div id="menu">
 			<ul id="lista-menu">
 				<li><a href="paginaInicial">HOME</a></li>
-				<li>
-
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
 
 				<li><a href="index2.jsp" style="color: #b71111">SAIR</a></li>
 			</ul>
@@ -130,7 +109,7 @@ if(usuario == null){
 
 		<h1>SIHISB - Alterar Senha</h1>	
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul�rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 		</div>
 		
 			<%if(request.getAttribute("msg") != null){%>
@@ -224,7 +203,7 @@ if(usuario == null){
 		<div id="rodape">
 
 
-			Copyright � 2012 - SECRETARIA DE HABITA��O DE S�O BERNARDO DO CAMPO
+			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE S�O BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8" %>
     
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -14,10 +14,10 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 %>  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura de S�o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura de São Bernardo do Campo - Sihisb</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="SIHISB - Planejamento e monitoramento da Pol�tica Habitacional no munic�pio" />
-<meta name="keywords" content="SEHAB SIHISP MAPA HABITA��O MONITORAMENTO MAPEAMENTO" />
+<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
+<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -35,11 +35,11 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Ol� <%=usuario.getLogin() %></div>
+		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 <div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
-						<li class="administradorOnly"><a href="#">USU�RIOS</a>
+						<li class="administradorOnly"><a href="#">USUÁRIOS</a>
 					<ul>
 						<li>
 							<div>
@@ -64,7 +64,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 						</ul>
 					</li>
-					<li><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
@@ -98,34 +98,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					</ul>
 
 				</li> 
-					<li><a href="http://192.168.237.24:8081/apex/f?p=100">RENDA<br/>ABRIGO</a>
-					
-				</li>
-				
-				<li><a href="http://192.168.237.24:8081/apex/f?p=102">TERMO PERMISS�O<br/>USO</a>
-					
-				</li>
-				<li>
 
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
 
 				<li><a href="index2.jsp" style="color: #b71111">SAIR</a></li>
 			</ul>
@@ -137,7 +110,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		<h1>SIHISB - Consulta de Assentamentos</h1>
 		
 		<div id="erros" style="display: none;">
-			Favor, verifique os campos destacados em <b>vermelho</b> no formul�rio.
+			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 		</div>
 		
 			<%if(request.getAttribute("mensagem") != null){%>
@@ -162,9 +135,9 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 				<legend>Resultado</legend>
 				<table border="0">
 					<tr>
-						<th><img src="images/arrow_more.png" /> <b>C�digo</b></th>
+						<th><img src="images/arrow_more.png" /> <b>Código</b></th>
 						<th><img src="images/arrow_more.png" /> <b>Nome do Emprendimento</b></th>
-						<th width="60"><img src="images/arrow_more.png" /> <b>A��o</b></th>
+						<th width="60"><img src="images/arrow_more.png" /> <b>Ação</b></th>
 					</tr>
 					<%
 						if(request.getAttribute("empreendimentoList") != null){
@@ -212,7 +185,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 			
 		</div></div>
 		<div id="rodape">
-			Copyright � 2012 - SECRETARIA DE HABITA��O DE S�O BERNARDO DO CAMPO
+			Copyright ₢ 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

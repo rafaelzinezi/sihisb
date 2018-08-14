@@ -6,8 +6,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Upload</title>
-	<meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
-	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
+	<meta name="description" content="SIHISB - Planejamento e monitoramento da PolÃ­tica Habitacional no municÃ­pio" />
+	<meta name="keywords" content="SEHAB SIHISP MAPA HABITAÃ‡ÃƒO MONITORAMENTO MAPEAMENTO" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" href="css/style.css" type="text/css"	media="screen" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
