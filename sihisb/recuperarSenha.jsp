@@ -130,7 +130,7 @@
 						</div>
 						<%}%>
 
-							<p class="width100" style="padding: 20px 0 20px 0">Digite no campo abaixo o e-mail que voc� cadastrou anteriormente para que sua senha seja enviada para seu e-mail.</p>
+							<p class="width100" style="padding: 20px 0 20px 0">Digite no campo abaixo o e-mail que você cadastrou anteriormente para que sua senha seja enviada para seu e-mail.</p>
 
 							<p class="width100" style="margin-top: 20px">
 
@@ -190,7 +190,7 @@
 
 		<div id="rodape">
 
-		Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE S�O BERNARDO DO CAMPO
+		Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>

@@ -180,7 +180,7 @@ if(usuario == null){
 							}
 							if(pwd_nova != pwd_confirma)
 							{
-								alert('Senhas n�o conferem.');
+								alert('Senhas não conferem.');
 								$("#nova_senha").val("");
 								$("#confirma_senha").val("");
 								$("#nova_senha").focus();
@@ -203,7 +203,7 @@ if(usuario == null){
 		<div id="rodape">
 
 
-			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE S�O BERNARDO DO CAMPO
+			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
 				<br/>
 				Rua Jacquey, 61 Rudge Ramos - CEP 09634 - 000
 				<br/>
