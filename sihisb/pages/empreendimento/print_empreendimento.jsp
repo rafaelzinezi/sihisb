@@ -37,7 +37,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Prefeitura Minicipal de S�o Bernardo do Campo - Sihisb</title>
+<title>Prefeitura Minicipal de São Bernardo do Campo - Sihisb</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <meta name="description" content="SIHISB - Planejamento e monitoramento da Política Habitacional no município" />
 <meta name="keywords" content="SEHAB SIHISP MAPA HABITAÇÃO MONITORAMENTO MAPEAMENTO" />
@@ -57,7 +57,7 @@ function imprimir()
 
 <body onfocus="document.getElementById('printar').style.visibility='visible';">
 	<div id="top">
-		<img src="images/logo_2012.jpg" title="S�o Bernardo do Campo"/>
+		<img src="images/logo_2012.jpg" title="São Bernardo do Campo"/>
 		<td><h1><%=((EmpImpressaoBean)request.getAttribute("imprime")).getNom_empreendimento() %></h1></td>
 	</div>
 	
@@ -65,14 +65,14 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Identifica��o do Empreendimento</h1>
+					<h1>Identificação do Empreendimento</h1>
 				</td>
 			</tr>
 			<tr>
 				<td width="150"><label>Nome do Empreendimento<label></td>
 				<td><%=((EmpImpressaoBean)request.getAttribute("imprime")).getNom_empreendimento() %></td>
 			
-				<td width="150"><label>Fam�lias Beneficiadas<label></td>
+				<td width="150"><label>Famílias Beneficiadas<label></td>
 				<td colspan="3">${imprime.qtd_FAMÍLIAS_atendidas}</td>
 			</tr>
 			
@@ -85,7 +85,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Contrato<label></td>
+				<td width="150"><label>Nº do Contrato<label></td>
 				<td>${imprime.num_contrato}</td>
 			
 				<td width="150"><label>Fonte de Recursos<label></td>
@@ -93,11 +93,11 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Descri��o do Empreendimento<label></td>
+				<td width="150"><label>Descrição do Empreendimento<label></td>
 				<td colspan="5">${imprime.des_empreendimento}</td>
 			</tr>
 			<tr>
-				<td width="150"><label>Tipologia da Produ��o Habitacional<label></td>
+				<td width="150"><label>Tipologia da Produção Habitacional<label></td>
 				<td colspan="5">${imprime.des_tipologia}</td>
 			</tr>
 					</table>
@@ -105,7 +105,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Est�gio de Contratação de Recursos</h1>
+					<h1>Estágio de Contratação de Recursos</h1>
 				</td>
 			</tr>
 			
@@ -116,12 +116,12 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contratação<label></td>
+				<td width="150"><label>Estágio de Contratação<label></td>
 				<td colspan="4">${imprimeRecursos.cod_estagio_contrat_rec}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observa��es<label></td>
+				<td width="150"><label>Observações<label></td>
 				<td colspan="4">${imprimeRecursos.des_obs_estagio_cont_rec}</td>
 			</tr>
 			
@@ -129,7 +129,7 @@ function imprimir()
 				<td width="150"><label>Protocolo Carta Consulta<label></td>
 				<td>${imprimeRecursos.num_protocolo_carta_consulta}</td>
 			
-				<td width="150"><label>N� do Contrato de Recursos<label></td>
+				<td width="150"><label>Nº do Contrato de Recursos<label></td>
 				<td colspan="3">${imprimeRecursos.num_contrato}</td>
 			</tr>
 		</table>
@@ -220,7 +220,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Est�gio de Contratação de Obras e Servi�os</h1>
+					<h1>Estágio de Contratação de Obras e Serviços</h1>
 				</td>
 			</tr>
 			<tr>
@@ -230,17 +230,17 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contratação<label></td>
+				<td width="150"><label>Estágio de Contratação<label></td>
 				<td colspan="5">${imprimeObras.cod_estagio_contrat_obra}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observa��es<label></td>
+				<td width="150"><label>Observações<label></td>
 				<td colspan="5">${imprimeObras.des_obs_estagio_contrat_obra}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previs�o<label></td>
+				<td width="150"><label>OIS Previsão<label></td>
 				<td colspan="2">${imprimeObras.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -248,15 +248,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Processo Administrativo<label></td>
+				<td width="150"><label>Nº do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeObras.num_processo_adm}</td>
 			
-				<td width="150"><label>N� do Processo Licita��o<label></td>
+				<td width="150"><label>Nº do Processo Licitação<label></td>
 				<td colspan="2">${imprimeObras.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Contrato<label></td>
+				<td width="150"><label>Nº do Contrato<label></td>
 				<td colspan="5">${imprimeObras.num_contrato}</td>
 			</tr>
 			<tr>
@@ -349,17 +349,17 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contratação<label></td>
+				<td width="150"><label>Estágio de Contratação<label></td>
 				<td colspan="5">${imprimeTrabSocial.cod_estagio_contrat_trab_soc}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observa��es<label></td>
+				<td width="150"><label>Observações<label></td>
 				<td colspan="5">${imprimeTrabSocial.des_obs_estagio_cont_trab_soc}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previs�o<label></td>
+				<td width="150"><label>OIS Previsão<label></td>
 				<td colspan="2">${imprimeTrabSocial.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -367,15 +367,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Processo Administrativo<label></td>
+				<td width="150"><label>Nº do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeTrabSocial.num_processo_adm}</td>
 			
-				<td width="150"><label>N� do Processo Licita��o<label></td>
+				<td width="150"><label>Nº do Processo Licitação<label></td>
 				<td colspan="2">${imprimeTrabSocial.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Contrato<label></td>
+				<td width="150"><label>Nº do Contrato<label></td>
 				<td colspan="5">${imprimeTrabSocial.num_contrato}</td>
 			</tr>
 			<tr>
@@ -464,22 +464,22 @@ function imprimir()
 			
 			<tr>
 				<td colspan="6">
-					<h2>Contratação de Regulariza��o Fundi�ria</h2>
+					<h2>Contratação de Regularização Fundiária</h2>
 				</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Est�gio de Contratação<label></td>
+				<td width="150"><label>Estágio de Contratação<label></td>
 				<td colspan="5">${imprimeRegFun.cod_estagio_contrat_reg_fund}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Observa��es<label></td>
+				<td width="150"><label>Observações<label></td>
 				<td colspan="5">${imprimeRegFun.des_obs_estagio_cont_reg_fund}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>OIS Previs�o<label></td>
+				<td width="150"><label>OIS Previsão<label></td>
 				<td colspan="2">${imprimeRegFun.dat_ois_prevista_para}</td>
 			
 				<td width="150"><label>OIS Asssinada<label></td>
@@ -487,15 +487,15 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Processo Administrativo<label></td>
+				<td width="150"><label>Nº do Processo Administrativo<label></td>
 				<td colspan="2">${imprimeRegFun.num_processo_adm}</td>
 			
-				<td width="150"><label>N� do Processo Licita��o<label></td>
+				<td width="150"><label>Nº do Processo Licitação<label></td>
 				<td colspan="2">${imprimeRegFun.num_processo_licitacao}</td>
 			</tr>
 			
 			<tr>
-				<td width="150"><label>N� do Contrato<label></td>
+				<td width="150"><label>Nº do Contrato<label></td>
 				<td colspan="5">${imprimeRegFun.num_contrato}</td>
 			</tr>
 			<tr>
@@ -583,7 +583,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Elabora��o de Projetos e Aprova��es</h1>
+					<h1>Elaboração de Projetos e Aprovações</h1>
 				</td>
 			</tr>
 			
@@ -636,7 +636,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>�gua e Esgoto<label></td>
+				<td width="150"><label>Água e Esgoto<label></td>
 				<td>${imprime.cod_estag_aprov_agua_esgoto}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -644,7 +644,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>G�s<label></td>
+				<td width="150"><label>Gás<label></td>
 				<td>${imprime.cod_estag_aprov_gas}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -652,7 +652,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Energia El�trica<label></td>
+				<td width="150"><label>Energia Elétrica<label></td>
 				<td>${imprime.cod_estag_aprov_energia_eletri}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -660,7 +660,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Telecomunica��es<label></td>
+				<td width="150"><label>Telecomunicações<label></td>
 				<td>${imprime.cod_estag_aprov_telecom}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -695,7 +695,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Andamento das A��es</h1>
+					<h1>Andamento das Ações</h1>
 				</td>
 			</tr>
 			
@@ -716,7 +716,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Recupera��o Ambiental/Compensa��o<label></td>
+				<td width="150"><label>Recuperação Ambiental/Compensação<label></td>
 				<td>${imprime.cod_andamento_rec_amb}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -724,7 +724,7 @@ function imprimir()
 			</tr>
 			
 			<tr>
-				<td width="150"><label>Jur�dica-Fundi�ria<label></td>
+				<td width="150"><label>Jurídica-Fundiária<label></td>
 				<td>${imprime.cod_andamento_juridico_fundiar}</td>
 			
 				<td width="150"><label>Observação<label></td>
@@ -743,7 +743,7 @@ function imprimir()
 		<table>
 			<tr class="topic">
 				<td colspan="6">
-					<h1>Execu��o F�sico-Financeira</h1>
+					<h1>Execução Físico-Financeira</h1>
 				</td>
 			</tr>
 			

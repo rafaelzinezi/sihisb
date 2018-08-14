@@ -168,7 +168,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 					<form id="formElem" name="formElem" method="post" action="empCadastro">
 					<%}%>				
 						<fieldset class="step">
-						<legend>Identifica��o do Empreendimento</legend>
+						<legend>Identificação do Empreendimento</legend>
 						<div>
 							<p class="width100">
 							<input type="hidden" id="idt_empreendimento" name="idt_empreendimento" value="<%= ((EmpBean)request.getAttribute("Empreend")).getIdt_empreendimento()%>"  <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> >
@@ -216,7 +216,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								<textarea id="desc_tipologia" name="desc_tipologia" class="specialTextArea"><%=((EmpBean)request.getAttribute("Empreend")).getDes_tipologia()%></textarea>
 							</p>
 						</div>
-						<legend>Est�gio de Contratação de Recursos</legend>
+						<legend>Estágio de Contratação de Recursos</legend>
 						<legend class="legend1">Contratação de Recursos com Agente Financeiro</legend>
 						<div>
 							<p class="width100">
@@ -835,7 +835,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								</span>
 							</p>
 							<p class="width100">
-								<label for="energia_eletrica" style="width:170px">Energia El�trica</label> 
+								<label for="energia_eletrica" style="width:170px">Energia Elétrica</label> 
 								<select id="energia_eletrica" name="energia_eletrica" onchange="mostraSelect(this, '108')" style="width: 200px">
 									<%
 											if(request.getAttribute("energiaEle") != null){
@@ -1127,7 +1127,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							<table border="0" style="width: 200px">
 								<tr>
 									<td><button id="registerButton" type="submit" onclick="return verificaSubmit()">Sim</button></td>
-									<td><button id="registerButton" type="Button" onClick="javascript:mainPage()">N�o</button></td>
+									<td><button id="registerButton" type="Button" onClick="javascript:mainPage()">Não</button></td>
 									
 								</tr>
 							</table>
