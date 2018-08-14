@@ -67,7 +67,7 @@ if(usuario == null){
 							
 						</ul>
 					</li>
-					<li class="C" ><a href="#">CADASTRO <br/> FAMILIAS</a>
+					<li class="C" ><a href="#">CADASTRO <br/> FAMÍLIAS</a>
 					
 						<ul>
 							<li>

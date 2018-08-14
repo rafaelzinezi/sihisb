@@ -92,7 +92,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 							
 						</ul>
 					</li>
-					<li class="C" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="C" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>

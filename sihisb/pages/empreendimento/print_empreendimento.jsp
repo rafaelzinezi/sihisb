@@ -73,7 +73,7 @@ function imprimir()
 				<td><%=((EmpImpressaoBean)request.getAttribute("imprime")).getNom_empreendimento() %></td>
 			
 				<td width="150"><label>Fam�lias Beneficiadas<label></td>
-				<td colspan="3">${imprime.qtd_familias_atendidas}</td>
+				<td colspan="3">${imprime.qtd_FAMÍLIAS_atendidas}</td>
 			</tr>
 			
 			<tr>

@@ -195,7 +195,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							<input type="hidden" id="idt_empreendimento" name="idt_empreendimento" value="<%= ((EmpBean)request.getAttribute("Empreend")).getIdt_empreendimento()%>"  <%=(request.getAttribute("update") != null ? "readonly='readonly'" : "") %> >
 								<label for="nome_empreendimento" style="width: 200px">Nome do Empreendimento</label> 
 								<input type="text" id="nome_empreendimento" name="nome_empreendimento" tabindex="01" style="width:400px" value="<%=((EmpBean)request.getAttribute("Empreend")).getNom_empreendimento()%>" />
-								<label for="familias_beneficiadas" style="width: 190px">Fam�lias Beneficiadas</label> 
+								<label for="familias_beneficiadas" style="width: 190px">Famílias Beneficiadas</label> 
 								<input type="text" class="smallInput" id="familias_beneficiadas" name="familias_beneficiadas" tabindex="02" value="<%=((EmpBean)request.getAttribute("Empreend")).getQtd_familias_atendidas()%>" />
 							</p>
 						</div>

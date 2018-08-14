@@ -64,7 +64,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 							
 						</ul>
 					</li>
-					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMILIAS</a>
+					<li class="BCDE BCD BC CDE CD C2" ><a href="#">CADASTRO <br/>DE FAMÍLIAS</a>
 					
 						<ul>
 							<li>
