@@ -92,27 +92,6 @@
 			<ul id="lista-menu">
 
 				<li><a href="index.html">HOME</a></li>
-				<li>
-
-					<a href="javascript: void()" onclick="abreBusca()" class="btMapa">
-
-						<img src="images/bt_mapa3.png" class="btSearch2 align-left" /> MAPA
-
-					</a>
-
-					<div id="iframeBusca" style="display: none">
-
-						<a href="/geoexplorer/composer/" target="_blank" class="colorBlue"><img src="images/ponteiro.png" /> ABRIR O MAPA</a>
-
-						<hr style="margin: 10px 0 10px 0"/>
-
-						Ou pesquisar:
-
-						<iframe src="search_geoexplorer.html?home=true" frameborder="0" width="100%" height="300"></iframe>
-
-					</div>
-
-				</li>
 
 			</ul>
 		</div>
