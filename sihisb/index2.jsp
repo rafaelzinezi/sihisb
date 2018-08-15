@@ -36,13 +36,13 @@
 		<div style="clear: both;"></div>
 	</div>
 	
-	
-	<div id="login">
-	<%if(request.getAttribute("mensagem") != null){%>
-			<div id="secess">
-				<%=request.getAttribute("mensagem") %>
-			</div>
-			<%}%>
+	<div id="content">
+		<div id="login">
+			<%if(request.getAttribute("mensagem") != null){%>
+				<div id="secess">
+					<%=request.getAttribute("mensagem") %>
+				</div>
+				<%}%>
 			<form method="post" action="validaLogin.do">
 				<label>Matricula:</label>
 				<input type="text" class="cxInput" name="nome"/>
@@ -53,6 +53,7 @@
 				<input type="submit" value="ACESSAR"  class="btOk"/>
 				<a href="recuperarSenha.jsp" class="linkComun">Esqueceu a senha?</a>
 			</form>
+		</div>
 
 		<div id="rodape">
 			Copyright © 2012 - SECRETARIA DE HABITAÇÃO DE SÃO BERNARDO DO CAMPO
