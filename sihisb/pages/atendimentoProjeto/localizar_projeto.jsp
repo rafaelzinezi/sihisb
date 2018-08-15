@@ -153,7 +153,8 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 								  </select>
 					
 					
-				</p>				<div><button id="registerButton" type="submit" style="margin: 0 0 40px 60px" onclick="return verificaAssent()">Consultar</button></div>
+				</p>				
+				<div><button id="registerButton" type="submit" style="margin: 0 0 40px 60px" onclick="return verificaAssent()">Consultar</button></div>
 				<legend>Resultado</legend>
 				<table border="0">
 					<tr>
@@ -300,7 +301,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	{	
 		$(".E4").show();
 		
-	}
+	};
 	</script>
 
 
