@@ -2,7 +2,6 @@
     <wb-module deploy-name="sihisb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WEB-INF/lib"/>
         <property name="context-root" value="sihisb"/>
         <property name="java-output-path" value="/sihisb/build/classes"/>
     </wb-module>
