@@ -120,7 +120,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		
 			<%if(request.getAttribute("mensagem") != null){%>
 			<div id="inf">
-				<%=request.getAttribute("mensagem") %>
+				<%=request.getAttribute("mensagem").toString() %>
 			</div>
 			<%}%>		
 		
