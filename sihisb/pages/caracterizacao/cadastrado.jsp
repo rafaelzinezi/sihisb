@@ -97,7 +97,7 @@ LoginBean usuario = (LoginBean)session.getAttribute("user");
 						<ul>
 							<li>
 								<div>
-								<a href="localizarProjeto">Consultar/Editar</a>
+								<a href="localizarCadFam">Consultar/Editar</a>
 								<form id="form2" name="form2" action="cadastroProjeto" method="get">
 								<a href="#" onClick=document.form2.submit()>Cadastrar</a>
 								</form>

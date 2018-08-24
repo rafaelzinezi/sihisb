@@ -97,8 +97,8 @@
 			br.gov.sp.saobernardo.sehab.servlet2.AlteraProjetoServlet</servlet-class>
 	</servlet>
 	<servlet>
-		<display-name>localizarProjeto</display-name>
-		<servlet-name>localizarProjeto</servlet-name>
+		<display-name>localizarCadFam</display-name>
+		<servlet-name>localizarCadFam</servlet-name>
 		<servlet-class>
 			br.gov.sp.saobernardo.sehab.servlet.LocalizarProjetoServlet</servlet-class>
 	</servlet>
@@ -241,8 +241,8 @@
 		<url-pattern>/alteraProjeto</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>localizarProjeto</servlet-name>
-		<url-pattern>/localizarProjeto</url-pattern>
+		<servlet-name>localizarCadFam</servlet-name>
+		<url-pattern>/localizarCadFam</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>impressaoProjeto</servlet-name>
