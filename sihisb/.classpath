@@ -12,7 +12,7 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="WEB-INF/classes" sourcepath="WEB-INF/lib/classes-src.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/classes" sourcepath="C:/Users/user/eclipse-workspace/classes-src.zip_expanded/source"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/ojdbc14.jar"/>
 	<classpathentry kind="lib" path="C:/wamp64/bin/apache/lib/servlet-api.jar"/>
