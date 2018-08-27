@@ -35,7 +35,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 	<div id="top-site">
 		<div id="logo"></div>
 		<div id="logo_sihisb"></div>
-		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin()%></div>
+		<div style="position: absolute;right:200px;top:140px">Olá <%=usuario.getLogin() %></div>
 <div id="menu">
 				<ul id="lista-menu">
 					<li><a href="paginaInicial">HOME</a></li>
@@ -69,7 +69,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						<ul>
 							<li>
 								<div>
-								<a href="localizarCadFam">Consultar/Editar</a>
+								<a href="localizarProjeto">Consultar/Editar</a>
 								<form id="form2" name="form2" action="cadastroProjeto" method="get">
 								<a href="#" onClick=document.form2.submit()>Cadastrar</a>
 								</form>
@@ -108,7 +108,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		
 	<div id="content">
 		<h1>SIHISB - Consulta de Assentamentos</h1>
-
+		
 		<div id="erros" style="display: none;">
 			Favor, verifique os campos destacados em <b>vermelho</b> no formulário.
 		</div>

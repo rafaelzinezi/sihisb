@@ -75,7 +75,7 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 						<ul>
 							<li>
 								<div>
-								<a href="localizarCadFam">Consultar/Editar</a>
+								<a href="localizarProjeto">Consultar/Editar</a>
 								<form id="form2" name="form2" action="cadastroProjeto" method="get">
 								<a href="#" onClick=document.form2.submit()>Cadastrar</a>
 								</form>
@@ -120,14 +120,14 @@ LoginBean modulo = (LoginBean)session.getAttribute("modulo");
 		
 			<%if(request.getAttribute("mensagem") != null){%>
 			<div id="inf">
-				<%=request.getAttribute("mensagem").toString() %>
+				<%=request.getAttribute("mensagem") %>
 			</div>
 			<%}%>		
 		
 	
 		<div id="wrapper">
 		<div id="steps">
-		<form id="formElem" name="formElem" action="localizarCadFam" method="post">
+		<form id="formElem" name="formElem" action="localizarProjeto" method="post">
 		<input type="hidden" name="codigo" value="">
 			<fieldset class="step">
 				<legend>Consultar</legend>
